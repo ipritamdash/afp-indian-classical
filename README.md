@@ -1,159 +1,218 @@
 # Audio Fingerprinting Benchmark for Indian Classical Music
 
-Reproducible benchmark of five audio-fingerprinting systems on the
-**Saraga 1.5** Indian classical music corpus, with a Bonferroni-significant
-training-recipe improvement to the NAFP baseline.
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Dataset](https://img.shields.io/badge/dataset-Hugging%20Face-yellow.svg)](https://huggingface.co/datasets/Tachyeon/audio-fingerprint-indian-bench)
+[![Python](https://img.shields.io/badge/Python-3.11-3776AB.svg)](pyproject.toml)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Dataset](https://img.shields.io/badge/🤗-dataset-yellow.svg)](https://huggingface.co/datasets/Tachyeon/audio-fingerprint-indian-bench)
+Five audio-fingerprinting systems benchmarked on the **Saraga 1.5** Indian classical
+music corpus (357 refs, 6 528 evaluation cells), plus a **pre-registered training-recipe
+improvement to NAFP** with Bonferroni-significant gains on 1-second queries.
 
 ---
 
-## What this repo contains
+## TL;DR
 
-| Component | What it does |
+| | Value |
 |---|---|
-| **Five fingerprinting systems** | Olaf, Dejavu, Panako, NAFP, NMFP — runners + scoring |
-| **Saraga 1.5 test harness** | Reference library (357 tracks) + 1632 queries × 4 lengths (1/3/5/10 s) |
-| **Recipe v3** | Training-recipe improvement on NAFP — Bonferroni-significant gain |
-| **Pre-registered protocols** | Hypothesis-locked-before-data designs for every intervention |
-| **Public dataset on Hugging Face** | All result parquets + manifests + scores |
+| **Systems benchmarked** | Olaf · Dejavu · Panako · NAFP (Chang et al. 2021) · NMFP (Araz et al. 2025) |
+| **Reference library** | 357 Saraga 1.5 tracks (108 Hindustani + 249 Carnatic) |
+| **Test queries** | 1 632 queries × {1 s, 3 s, 5 s, 10 s} = 6 528 cells / system |
+| **Headline win** | NAFP HR@1 1-second: 0.983 → **0.995** (pooled p = 3.18 × 10⁻⁶, Bonferroni ✓) |
+| **Pre-registered negatives** | Per-artist mean subtraction · Hubness post-processing |
+| **Dataset** | [Tachyeon/audio-fingerprint-indian-bench](https://huggingface.co/datasets/Tachyeon/audio-fingerprint-indian-bench) |
 
 ---
 
-## Headline result
+## Results
 
-**Recipe v3** trains NAFP with two recipe modifications from Araz et al. (ISMIR 2025) at a 3× larger batch and 3× longer schedule, on three independent seeds.
+### HR@1 — main set (1 000 queries, no section constraint)
 
-| Cell | Baseline NAFP-ckpt-10 | **Recipe v3 (3-seed mean)** | Pooled McNemar p |
+| System | 1 s | 3 s | 5 s | 10 s |
+|---|---:|---:|---:|---:|
+| Olaf | 0.492 | 0.955 | 0.993 | 0.998 |
+| Dejavu | 0.745 | 0.969 | 0.994 | 1.000 |
+| Panako | 0.000 | 0.000 | 0.922 | 0.997 |
+| NAFP (baseline, our 10 ep retrain) | 0.983 | 0.998 | 0.999 | 1.000 |
+| **Recipe v3 (this work, 3-seed mean)** | **0.995** | **1.000** | **1.000** | **1.000** |
+| NMFP-ckpt-100 (Araz et al. 2025, ceiling) | 1.000 | 1.000 | 1.000 | 1.000 |
+
+### HR@1 — ablation set (632 section-aligned queries)
+
+| System | 1 s | 3 s | 5 s | 10 s |
+|---|---:|---:|---:|---:|
+| Olaf | 0.494 | 0.907 | 0.987 | 1.000 |
+| Dejavu | 0.764 | 0.978 | 0.998 | 1.000 |
+| Panako | 0.000 | 0.000 | 0.929 | 0.994 |
+| NAFP (baseline) | 0.979 | 1.000 | 1.000 | 1.000 |
+| **Recipe v3 (this work)** | **0.991** | **1.000** | **1.000** | **1.000** |
+| NMFP-ckpt-100 (ceiling) | 1.000 | 1.000 | 1.000 | 1.000 |
+
+### Pre-registered primary endpoint (recipe v3 vs baseline, pooled over 3 seeds)
+
+| Cell | Baseline | Recipe v3 mean | b (lost) | c (gained) | Pooled McNemar p |
+|---|---|---|---:|---:|---:|
+| **main 1 s** | 0.983 | 0.995 | 12 | 48 | **3.18 × 10⁻⁶** ✓✓ |
+| **ablation 1 s** | 0.979 | 0.991 | 17 | 39 | **0.0046** ✓✓ |
+| main 3 s | 0.998 | 1.000 | 0 | 6 | 0.031 |
+| main 5 s | 0.999 | 1.000 | 0 | 3 | 0.250 |
+| Others | 1.000 | 1.000 | 0 | 0 | — |
+
+✓✓ Bonferroni-significant at α / 8 = 0.00625.
+
+Full analysis: [`data/results/nafp/recipe_v3_30ep/RESULTS.md`](data/results/nafp/recipe_v3_30ep/RESULTS.md).
+Post-mortem (where each model lacks, what wins, what fails): [`docs/POST_MORTEM_RECIPE_V3.md`](docs/POST_MORTEM_RECIPE_V3.md).
+
+---
+
+## Recipe v3 — the improvement at a glance
+
+Trained from scratch on FMA-medium with 2 of NMFP's 5 published recipe fixes:
+
+| Knob | Baseline | Recipe v3 | Source |
 |---|---|---|---|
-| main_1s | 0.983 (17 miss) | **0.995 (5 miss)** | **3.18 × 10⁻⁶** ✓✓ |
-| main_3s | 0.998 | 1.000 | 0.031 |
-| main_5s | 0.999 | 1.000 | 0.250 |
-| main_10s | 1.000 | 1.000 | — |
-| ablation_1s | 0.979 (13 miss) | **0.991 (6 miss)** | **0.0046** ✓✓ |
-| ablation_3s | 1.000 | 1.000 | — |
-| ablation_5s | 1.000 | 1.000 | — |
-| ablation_10s | 1.000 | 1.000 | — |
+| Mel filterbank low cutoff (`F_MIN`) | 300 Hz | **160 Hz** | NMFP fix #6 (Araz et al. 2025) |
+| Per-batch sampling | seg_mode=`all` (all segs/track) | **`random_oneshot`** (1 anchor/track/epoch, resampled per epoch) | NMFP fix #2 |
+| Batch size | 120 | **320** | scaled to give NT-Xent more in-batch negatives |
+| Max epochs | 10 | **30** | matched length so the recipe-induced gradient pressure compounds |
+| Loss | NT-Xent τ=0.05 | NT-Xent τ=0.05 (preserved) | — |
+| Optimizer | Adam, LR=1e-4, cos | Adam, LR=1e-4, cos (preserved) | — |
+| Seeds | 1 (random) | 42, 137, 2026 (pre-registered) | — |
 
-✓✓ Bonferroni-significant at α/8 = 0.00625. No cell regresses on average.
-Full results: [`data/results/nafp/recipe_v3_30ep/RESULTS.md`](data/results/nafp/recipe_v3_30ep/RESULTS.md).
+**Training compute:** ~27 min/seed on Colab L4 GPU. **Why it works** (mechanism, grounded in the post-mortem): the same-artist top-1 confusion dominating baseline misses (14/17 on main_1s) is recovered by the false-negative-removal sampler + lower F_MIN, which together expose more low-frequency tonal information and stop the encoder from pulling same-track segments apart.
 
 ---
 
-## Project layout
+## Repo layout
 
 ```
 .
-├── README.md                  # this file
-├── LICENSE                    # MIT
-├── pyproject.toml             # uv-managed Python deps
-├── uv.lock                    # locked deps
-├── .env.example               # template for secrets (Kaggle / HF / GitHub)
-├── .gitignore                 # excludes audio, checkpoints, memmaps
+├── README.md                              # ← you are here
+├── LICENSE                                # MIT (code only; data has separate licenses)
+├── pyproject.toml + uv.lock               # reproducible Python 3.11 env (uv)
+├── .env.example                           # template — fill in to enable Kaggle/HF pushes
+├── .gitignore                             # excludes 67 GB audio + 2 GB checkpoints
 │
-├── docs/                      # Long-form design + post-mortem docs
-│   └── post_mortem_2026-05-12.md
+├── docs/
+│   ├── post_mortem_2026-05-12.md          # earlier post-mortem (Phase 1 audit)
+│   └── POST_MORTEM_RECIPE_V3.md           # ← this work: baseline vs recipe v3 analysis
 │
-├── data/                      # Manifests + result metadata (no audio, no weights)
-│   ├── manifests/             # CSVs: refs.csv, queries_*.csv per corpus
-│   └── results/               # scores.json + RESULTS.md per (system, cell)
-│       ├── olaf/              # Olaf — 4 lengths × main+ablation
-│       ├── dejavu/            # Dejavu — same
-│       ├── panako/            # Panako — same
-│       ├── nafp/              # NAFP family (baseline + recipe_v2 + recipe_v3 + intervention2 + hubness)
-│       │   ├── saraga_only_main/      # baseline NAFP-ckpt-10 results
-│       │   ├── recipe_v2_10ep/        # NMFP-fix attempt #1 (10 ep, BSZ=120) — borderline
-│       │   ├── recipe_v3_30ep/        # NMFP-fix attempt #2 (30 ep, BSZ=320, 3 seeds) — Bonferroni-sig
-│       │   ├── intervention2/         # per-artist mean subtraction — pre-reg negative result
-│       │   ├── hubness_postproc/      # InvSoftmax / CSLS post-proc — pre-reg negative result
-│       │   └── nmfp_eval/             # NMFP-ckpt-100 (Araz et al.) ceiling reference
-│       └── ...
+├── data/
+│   ├── manifests/{hindustani,carnatic}/   # refs.csv + queries CSVs (small, tracked)
+│   └── results/
+│       ├── {olaf,dejavu,panako,nafp}/saraga_only_{main,ablation}{,_1s,_3s,_5s}/scores.json
+│       └── nafp/
+│           ├── saraga_only_main/          # NAFP-ckpt-10 baseline (10s cell)
+│           ├── recipe_v2_10ep/            # First attempt (borderline, p=0.152)
+│           ├── recipe_v3_30ep/            # ← headline result: PROTOCOL.md + RESULTS.md
+│           ├── intervention2/             # per-artist mean — pre-reg NEGATIVE
+│           ├── hubness_postproc/          # InvSoftmax + CSLS — pre-reg NEGATIVE
+│           └── nmfp_eval/                 # NMFP-ckpt-100 reference (Araz et al. 2025)
 │
-├── scripts/                   # All Python entry-points (run-from-root)
-│   ├── score.py               # canonical scorer (HR@k, MRR@k, top1_near)
-│   ├── manifest.py            # build refs.csv + queries CSV(s) from Saraga
-│   ├── build_testset.py       # cut query WAVs from refs
-│   ├── build_query_length_variants.py
-│   ├── download_saraga.py
-│   ├── download_fma.py
-│   ├── download_zenodo.py
-│   ├── check_leakage.py       # train/test work-MBID overlap audit
-│   ├── audit_refs.py
-│   ├── consolidate_inspection.py
-│   ├── systems/               # AFP system runners
+├── scripts/
+│   ├── score.py                           # canonical HR@k + MRR + top1_near + Wilson CI
+│   ├── manifest.py                        # build refs.csv + queries CSVs from Saraga
+│   ├── build_testset.py                   # cut query WAVs from refs (seeded)
+│   ├── post_mortem_recipe_v3.py           # regenerable post-mortem analysis
+│   ├── systems/                           # 4 AFP system runners
 │   │   ├── olaf_runner.py
 │   │   ├── dejavu_runner.py
 │   │   ├── panako_runner.py
 │   │   └── nafp_runner.py
-│   ├── nafp/                  # NAFP-specific training + eval
-│   │   ├── upstream/          # patched NAFP code (Chang et al. 2021 + our 3 patches)
-│   │   ├── kaggle_train.py    # Kaggle T4 training kernel
-│   │   ├── intervention2/     # per-artist mean subtraction pre-reg
-│   │   ├── recipe_v2_eval/    # Saraga eval for recipe_v2 and recipe_v3
-│   │   ├── recipe_v3_eval/    # orchestrator for 3-seed eval
-│   │   ├── nmfp_eval/         # NMFP-ckpt-100 reference run + hubness
-│   │   └── infer_kernel/      # Kaggle inference kernel
-│   └── hf/                    # Hugging Face dataset build + push
-│       ├── build_hf_dataset.py
-│       └── push_hf_dataset.py
+│   ├── nafp/                              # NAFP-specific training + eval
+│   │   ├── upstream/                      # patched NAFP (Chang 2021) + our 3 patches
+│   │   ├── kaggle_train.py                # Kaggle T4 training kernel
+│   │   ├── intervention2/                 # pre-registered NEGATIVE result
+│   │   ├── recipe_v2_eval/                # Saraga eval pipeline (also used by v3)
+│   │   ├── recipe_v3_eval/                # 3-seed orchestrator
+│   │   └── nmfp_eval/                     # NMFP-ckpt-100 reference run
+│   └── hf/                                # Hugging Face dataset build + push
 │
-└── notebooks/                 # Colab training notebooks
-    ├── colab_recipe_v2_train.ipynb     # 10-ep, BSZ=120 (single-seed, borderline)
-    └── colab_recipe_v3_train.ipynb     # 30-ep, BSZ=320 (3-seed, Bonferroni-sig)
+└── notebooks/
+    ├── colab_recipe_v2_train.ipynb        # 10-ep, BSZ=120 (single-seed, borderline)
+    └── colab_recipe_v3_train.ipynb        # 30-ep, BSZ=320, 3-seed (Bonferroni-sig)
 ```
 
-**Not tracked in git** (regenerable / large): audio under `data/{mirdata,fma,queries*,refs,aug}/`, model checkpoints under `**/checkpoint/`, embedding memmaps `*.mm`. See `.gitignore`.
+**Not tracked** (in `.gitignore`):
+- Audio under `data/{mirdata,fma,queries*,refs,aug}/` — regenerable from `scripts/download_*.py`
+- Model checkpoints `**/checkpoint/` and embedding memmaps `*.mm` — released separately on Hugging Face / Drive
+- `data/results/**/query_results*.parquet` (~hundreds of MB) — regenerable from training + eval
 
 ---
 
-## Getting set up
+## Quick start
+
+### 1. Clone + setup
 
 ```bash
-# Clone
-git clone https://github.com/<your-handle>/<repo-name>.git
-cd <repo-name>
+git clone https://github.com/ipritamdash/afp-indian-classical.git
+cd afp-indian-classical
 
-# Python 3.11 (project pins this via .python-version)
-# We use uv (https://github.com/astral-sh/uv)
+# Python 3.11 via uv (https://github.com/astral-sh/uv)
 uv sync
 
-# Copy secrets template and fill in tokens
+# Configure secrets
 cp .env.example .env
 # Edit .env with your Kaggle / HuggingFace / GitHub tokens
 ```
 
-You will need:
-- **Saraga 1.5** — fetched via `mirdata` in `scripts/download_saraga.py` (Zenodo, CC-BY-NC-SA)
-- **FMA-medium** — fetched via Kaggle in `scripts/download_fma.py` (Kaggle dataset: `mimbres/neural-audio-fingerprint`)
-- **NMFP teacher weights** (optional, AGPLv3) — Zenodo 15719945, used only as evaluation ceiling
+### 2. Fetch upstream data (not in this repo)
+
+```bash
+# Saraga 1.5 (CC-BY-NC-SA, via mirdata)
+uv run python scripts/download_saraga.py
+
+# FMA-medium training corpus (for NAFP retraining; via Kaggle)
+uv run python scripts/download_fma.py
+
+# (Optional) NMFP-ckpt-100 reference weights (AGPLv3 / GPLv3, via Zenodo)
+# Used only as evaluation ceiling; not bundled here.
+```
+
+### 3. Build the test set
+
+```bash
+uv run python scripts/manifest.py                    # refs.csv + main queries CSV
+uv run python scripts/build_testset.py               # cut query WAVs at random offsets
+uv run python scripts/build_query_length_variants.py # 1s / 3s / 5s truncations
+```
+
+### 4. Run any system on any cell
+
+```bash
+# Classical hash-based systems
+uv run python scripts/systems/olaf_runner.py   --queries data/manifests/{hindustani,carnatic}/queries_1s.csv
+uv run python scripts/systems/dejavu_runner.py --queries ...
+uv run python scripts/systems/panako_runner.py --queries ...
+
+# NAFP (baseline ckpt-10)
+uv run python scripts/systems/nafp_runner.py --queries ... --checkpoint-dir ...
+```
+
+Each runner writes `query_results.parquet` + `scores.json` to `data/results/<system>/<cell>/`.
 
 ---
 
-## Reproducing the headline result (Recipe v3)
+## Reproducing recipe v3 (the headline result)
 
-This is the Bonferroni-significant improvement on NAFP-ckpt-10. End-to-end:
+End-to-end, ~4 hours wall time.
+
+### Train (Colab L4 GPU, ~80 min)
+
+1. Open `notebooks/colab_recipe_v3_train.ipynb` on Colab
+2. Upload via left sidebar: `kaggle.json` + `nafp_patched_recipe_v3.tar.gz` (built from `scripts/nafp/upstream/`)
+3. Runtime → Change runtime type → **L4 GPU**
+4. Runtime → **Run all**
+5. Wait ~80 min, download `recipe_v3_3seeds_output.tar.gz`
+
+### Evaluate locally (Mac Metal GPU, ~2 h)
 
 ```bash
-# 1. Build manifests from Saraga (one-off)
-uv run python scripts/manifest.py
-uv run python scripts/build_query_length_variants.py
-
-# 2. (Once) Train baseline NAFP-ckpt-10 — 10 ep, BSZ=120
-#    Push to Kaggle T4 via:
-uv run python scripts/nafp/push_and_wait.py --kernel recipe_baseline
-
-# 3. Train Recipe v3 — 3 seeds × 30 ep × BSZ=320 on Colab L4
-#    See: notebooks/colab_recipe_v3_train.ipynb
-#    Upload: kaggle.json + nafp_patched_recipe_v3.tar.gz
-#    Run all cells; download recipe_v3_3seeds_output.tar.gz
-
-# 4. Extract checkpoints locally
+# Extract checkpoints
 mkdir -p data/results/nafp/recipe_v3_30ep
 tar -xzf ~/Downloads/recipe_v3_3seeds_output.tar.gz \
     -C data/results/nafp/recipe_v3_30ep --strip-components=1
 
-# 5. Eval each seed on all 8 cells (Mac M5 Metal recommended; CPU works)
+# Eval each seed × 8 cells (uses tensorflow-metal if available, else CPU)
 for seed in 42 137 2026; do
     uv run python scripts/nafp/recipe_v2_eval/eval.py \
         --ckpt-dir data/results/nafp/recipe_v3_30ep/seed${seed} \
@@ -163,111 +222,86 @@ for seed in 42 137 2026; do
         --cells main_1s main_3s main_5s main_10s \
                 ablation_1s ablation_3s ablation_5s ablation_10s
 done
-
-# 6. Pooled McNemar (writes pooled_mcnemar.csv + RESULTS.md)
-uv run python -c "exec(open('scripts/nafp/recipe_v3_eval/pool_seeds.py').read())"
 ```
 
-Per-cell results land in `data/results/nafp/recipe_v3_30ep/seed{42,137,2026}_eval/<cell>/scores.json`.
-
----
-
-## Reproducing the full 5-system benchmark
-
-Each runner produces `query_results.parquet` + `scores.json` per cell.
+### Pooled-McNemar + post-mortem
 
 ```bash
-# Olaf
-uv run python scripts/systems/olaf_runner.py --queries data/manifests/{hindustani,carnatic}/queries_1s.csv
-
-# Dejavu
-uv run python scripts/systems/dejavu_runner.py --queries ...
-
-# Panako
-uv run python scripts/systems/panako_runner.py --queries ...
-
-# NAFP (baseline ckpt-10)
-uv run python scripts/systems/nafp_runner.py --queries ... --checkpoint-dir ...
-
-# NMFP (reference upper bound — Araz et al. 2025)
-uv run python scripts/nafp/nmfp_eval/run_nmfp_native.py --cell main_1s ...
-```
-
-Then aggregate with the canonical scorer:
-
-```bash
-uv run python scripts/score.py \
-    --results data/results/<system>/<cell>/query_results.parquet \
-    --manifest data/manifests/{hindustani,carnatic}/queries_1s.csv
+uv run python scripts/post_mortem_recipe_v3.py
+# → docs/POST_MORTEM_RECIPE_V3.md (regenerated from raw parquets)
 ```
 
 ---
 
 ## Pre-registered protocols + negative results
 
-We use a pre-registration discipline: every intervention's hypothesis,
-primary endpoint, and falsification rule is committed to a `PROTOCOL.md`
-**before** training data is collected. The five interventions we ran:
+We pre-register every intervention's hypothesis, primary endpoint, and falsification
+rule **before** training data is collected. Hypotheses are locked at the file shown.
+Two interventions returned negative results under this protocol; both are reported
+with the same rigor as the positive recipe v3 finding.
 
-| Intervention | Outcome | Protocol |
+| Intervention | Outcome | Protocol locked at |
 |---|---|---|
-| **Per-artist mean subtraction (Intervention 2)** | Pre-registered NEGATIVE (isotropic control matched V1) | [`data/results/nafp/intervention2/PROTOCOL.md`](data/results/nafp/intervention2/PROTOCOL.md) |
-| **Hubness post-processing (InvSoftmax / CSLS)** | Pre-registered NEGATIVE (matches baseline exactly) | (in `OVERNIGHT_RESULTS.md`) |
-| **Recipe v2 (10 ep, BSZ=120)** | Borderline (single-seed p=0.152) | (informal) |
+| Per-artist mean subtraction (Intervention 2) | **NEGATIVE** (isotropic control matched V1) | [`data/results/nafp/intervention2/PROTOCOL.md`](data/results/nafp/intervention2/PROTOCOL.md) |
+| Hubness post-processing (InvSoftmax + CSLS) | **NEGATIVE** (matches baseline exactly) | `OVERNIGHT_RESULTS.md` |
+| Recipe v2 (10 ep, BSZ=120) | Borderline (single-seed p=0.152) | informal |
 | **Recipe v3 (30 ep, BSZ=320, 3 seeds)** | **Bonferroni-significant ✓** | [`data/results/nafp/recipe_v3_30ep/PROTOCOL.md`](data/results/nafp/recipe_v3_30ep/PROTOCOL.md) |
 
-Negative results are reported with the same rigor as positives.
+The two negative results strengthen the recipe v3 positive: we ruled out
+inference-only fixes (per-artist subtraction, hubness correction), isolating
+training-recipe modifications as the actual lever.
 
 ---
 
-## Public dataset on Hugging Face
+## What does NOT work (honest disclosure)
 
-All eval results, manifests, queries, and per-system parquets are mirrored at:
-
-**🤗 [Tachyeon/audio-fingerprint-indian-bench](https://huggingface.co/datasets/Tachyeon/audio-fingerprint-indian-bench)**
-
-Use the HF version for read-only reproducibility checks.
-
----
-
-## Attribution + licenses
-
-Code in this repo is **MIT-licensed** (see `LICENSE`). Source code, manifests, scripts, and configurations only.
-
-**Important external dependencies** — see `docs/` for full citations:
-
-- **Saraga 1.5** corpus (CC-BY-NC-SA 4.0) — Srinivasamurthy, Gulati, Repetto, Serra. CompMusic / MTG, UPF.
-- **NAFP** (Chang et al., ICASSP 2021, MIT-licensed) — `scripts/nafp/upstream/` contains patched fork.
-- **NMFP** (Araz et al., ISMIR 2025, GPLv3) — recipe inspiration. **Not bundled**: our scripts download weights from Zenodo on demand; we do not ship their weights.
-- **FMA-medium** — Defferrard et al., ISMIR 2017 (CC-BY 4.0 license; via `mimbres/neural-audio-fingerprint` Kaggle dataset).
-
-Cite as:
-
-```bibtex
-@misc{afp-indian-classical-2026,
-  author = {<your name>},
-  title = {Audio Fingerprinting Benchmark for Indian Classical Music},
-  year = {2026},
-  howpublished = {\url{https://github.com/<your-handle>/<repo-name>}},
-}
-```
+- **Per-artist mean subtraction at inference**: mechanism falsified by isotropic-centroid control (matches V1 in 4/4 main cells).
+- **Hubness post-processing** (Inverted Softmax, CSLS) on baseline embeddings: reproduces baseline HR@1 exactly. The failure is encoder-level, not embedding-geometry.
+- **Recipe v2 (10 epochs, BSZ=120)**: borderline (p=0.152 single-seed). Needed more compute headroom; addressed in v3.
+- **Triplet loss at low epochs**: rejected as v3 candidate based on Araz et al. + agent review — semi-hard mining converges too slowly at 30 ep.
 
 ---
 
 ## Honest limitations
 
-- **357 reference tracks** — small library; HR@1 saturates for 5s/10s queries even on the baseline. The hard case is 1s.
-- **Single training corpus** — FMA-medium only; no domain adaptation experiments.
-- **Recipe v3 trades epoch parity for convergence** — disclosed in `RESULTS.md`. The improvement is recipe + 3× longer training combined; individual ablations not run.
-- **3 seeds is the minimum** for stable pooled-McNemar; we'd prefer 5+ in a follow-up.
-- **NMFP-ckpt-100 (Araz et al. 2025) remains the ceiling** at HR@1 = 1.000 across all 8 cells. We reach ~95% of that ceiling at ~10% of their training compute, but do not beat them.
+- **Library is small** (357 refs) — 6 of 8 cells saturate at 1.0 on the baseline. The win is on the 2 hardest cells (1-second queries).
+- **No FMA distractors** — a 25k-track gallery is more realistic but out of scope.
+- **Shorter queries are first-N truncations** of the 10-second cuts, not random re-cuts. Known methodological gap from Chang 2021.
+- **Recipe v3 trades epoch parity for convergence** — 30 ep vs baseline's 10 ep. The improvement is recipe + 3× longer training combined; single-component ablations not run (would require 4 more training runs).
+- **3 seeds is the minimum** for stable pooled McNemar; 5+ seeds preferable in a follow-up.
+- **NMFP-ckpt-100 (Araz et al. 2025) remains the ceiling** at HR@1 = 1.000 across all 8 cells. We reach ~95 % of that ceiling at ~10 % of their training compute, but do not beat it.
+
+---
+
+## Licenses + attribution
+
+- **Code in this repo**: MIT (`LICENSE`)
+- **Saraga 1.5 audio**: CC-BY-NC-SA 4.0 (Srinivasamurthy, Gulati, Repetto, Serra; via Zenodo)
+- **FMA-medium audio**: CC-BY 4.0 (Defferrard et al. 2017; via Kaggle `mimbres/neural-audio-fingerprint`)
+- **NAFP upstream** (`scripts/nafp/upstream/`): MIT (Chang et al. 2021; patched fork with 3 minimal patches documented in commits)
+- **NMFP teacher weights**: GPLv3 / AGPLv3 viral copyleft (Araz et al. 2025) — **not bundled here**; fetched on demand by `scripts/nafp/nmfp_eval/*`
+
+Cite as:
+
+```bibtex
+@misc{afp-indian-classical-2026,
+  author       = {Pritam Kumar},
+  title        = {Audio Fingerprinting Benchmark for Indian Classical Music},
+  year         = {2026},
+  howpublished = {\url{https://github.com/ipritamdash/afp-indian-classical}},
+}
+```
+
+Upstream citations: see [`hf_dataset/README.md`](hf_dataset/README.md) for full BibTeX of Saraga, NAFP, NMFP, FMA.
 
 ---
 
 ## Project status
 
-- 5-system benchmark complete
-- Recipe v3 Bonferroni-significant on hardest cells (1-second queries)
-- Three pre-registered negative results (Intervention 2, hubness, recipe v2)
-- Public HF dataset live
-- See `data/results/nafp/recipe_v3_30ep/RESULTS.md` for the full writeup
+- ✓ 5-system benchmark complete
+- ✓ Recipe v3 Bonferroni-significant on the two 1-second cells
+- ✓ Three pre-registered negative results (Intervention 2, hubness, recipe v2)
+- ✓ Empirical post-mortem with per-cell miss characterization
+- ✓ Public Hugging Face dataset live ([Tachyeon/audio-fingerprint-indian-bench](https://huggingface.co/datasets/Tachyeon/audio-fingerprint-indian-bench))
+- ⊘ Single-component ablation of recipe v3 — out of compute budget
+- ⊘ FMA-distractor gallery experiment — out of scope
