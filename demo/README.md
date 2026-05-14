@@ -58,6 +58,17 @@ instead of a wrong answer.
 - **Reference embeddings (`artifacts/ref_embs.mm`)**: CC-BY-NC-SA 4.0
   (derivative of Saraga 1.5 audio). **Non-commercial use only.**
 
+## Deploy your own copy
+
+See [`DEPLOY.md`](DEPLOY.md). One command after `pip install huggingface_hub`:
+
+```bash
+HF_TOKEN=hf_xxx python deploy.py --repo-name my-afp-demo
+```
+
+The script snapshots this Space, creates a new one under your account, and
+waits for the build. ~10 minutes start to finish.
+
 ## Related
 
 - 📦 Public dataset: [Tachyeon/audio-fingerprint-indian-bench](https://huggingface.co/datasets/Tachyeon/audio-fingerprint-indian-bench)
