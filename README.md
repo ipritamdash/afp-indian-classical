@@ -17,7 +17,7 @@ improvement to NAFP** with Bonferroni-significant gains on 1-second queries.
 | **Systems benchmarked** | Olaf · Dejavu · Panako · NAFP (Chang et al. 2021) · NMFP (Araz et al. 2025) |
 | **Reference library** | 357 Saraga 1.5 tracks (108 Hindustani + 249 Carnatic) |
 | **Test queries** | 1 632 queries × {1 s, 3 s, 5 s, 10 s} = 6 528 cells / system |
-| **Headline win** | NAFP HR@1 1-second: 0.983 → **0.995** (pooled p = 3.18 × 10⁻⁶, Bonferroni ✓) |
+| **Headline win** | **−68 % miss rate across benchmark** (−71 % on the hardest cell, 1-second main); pooled McNemar p = 3.18 × 10⁻⁶, Bonferroni ✓ |
 | **Pre-registered negatives** | Per-artist mean subtraction · Hubness post-processing |
 | **Dataset** | [Tachyeon/audio-fingerprint-indian-bench](https://huggingface.co/datasets/Tachyeon/audio-fingerprint-indian-bench) |
 
@@ -58,6 +58,19 @@ improvement to NAFP** with Bonferroni-significant gains on 1-second queries.
 | Others | 1.000 | 1.000 | 0 | 0 | — |
 
 ✓✓ Bonferroni-significant at α / 8 = 0.00625.
+
+### Improvement summary (error-rate reduction)
+
+| Cell | Baseline misses | Recipe v3 mean misses | Error reduction |
+|---|---:|---:|---:|
+| main 1 s | 17 / 1 000 | 5 / 1 000 | **−70.6 %** |
+| ablation 1 s | 13 / 632 | 5.7 / 632 | **−56.2 %** |
+| main 3 s | 2 / 1 000 | 0 / 1 000 | −100 % |
+| main 5 s | 1 / 1 000 | 0 / 1 000 | −100 % |
+| Other 4 cells | 0 | 0 | — |
+| **All 8 cells (total)** | **33 / 6 528** | **10.7 / 6 528** | **−67.6 %** |
+
+Headline number: **~68 % fewer misses across the benchmark, ~71 % on the hardest cell (1-second main queries)**.
 
 Full analysis: [`data/results/nafp/recipe_v3_30ep/RESULTS.md`](data/results/nafp/recipe_v3_30ep/RESULTS.md).
 Post-mortem (where each model lacks, what wins, what fails): [`docs/POST_MORTEM_RECIPE_V3.md`](docs/POST_MORTEM_RECIPE_V3.md).

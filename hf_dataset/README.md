@@ -116,6 +116,19 @@ achieves Bonferroni-significant gains on 1-second queries.
 No cell regresses on average. Recipe v3 closes the gap to the NMFP ceiling
 substantially at ~10 % of NMFP's training compute.
 
+### Improvement summary (error-rate reduction)
+
+| Cell | Baseline misses | Recipe v3 mean misses | Error reduction |
+|---|---:|---:|---:|
+| main 1 s | 17 / 1 000 | 5 / 1 000 | **−70.6 %** |
+| ablation 1 s | 13 / 632 | 5.7 / 632 | **−56.2 %** |
+| main 3 s | 2 / 1 000 | 0 / 1 000 | −100 % |
+| main 5 s | 1 / 1 000 | 0 / 1 000 | −100 % |
+| Other 4 cells | 0 | 0 | — |
+| **All 8 cells (total)** | **33 / 6 528** | **10.7 / 6 528** | **−67.6 %** |
+
+**Headline: ~68 % fewer misses across the benchmark, ~71 % on the hardest cell.**
+
 ---
 
 ## What's in this dataset
@@ -392,10 +405,12 @@ When citing this benchmark, please also cite the upstream papers:
 ## Changelog
 
 - **v0.6** (2026-05-14): Major release.
+  - **Recipe v3 training-recipe improvement** — ~68 % miss-rate reduction
+    across benchmark (~71 % on main_1s); pre-registered Bonferroni-significant
+    on the two hardest cells (3 seeds × 30 epochs × BSZ=320, pooled McNemar
+    p = 3.18 × 10⁻⁶ on main_1s, p = 0.0046 on ablation_1s)
   - **Added NMFP-ckpt-100** (Araz et al. ISMIR 2025) as system #5 — establishes
     HR@1 = 1.000 ceiling across all 8 cells
-  - **Added Recipe v3** training-recipe improvement (3 seeds × 30 epochs ×
-    BSZ=320); pre-registered Bonferroni-significant on main_1s + ablation_1s
   - **Added pre-registered negative results**: Intervention 2 (per-artist mean
     subtraction) and hubness post-processing (InvSoftmax + CSLS)
   - All 4 query lengths now exposed per (system × split); v0.5 only had 10 s
