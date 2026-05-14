@@ -1,0 +1,38 @@
+{
+  "global_seed": 20260511,
+  "longest_query_sec": 10.0,
+  "target_sr": 16000,
+  "target_channels": 1,
+  "alaap_needles": [
+    "alap",
+    "alapana"
+  ],
+  "composed_needles": [
+    "pallavi",
+    "anupallavi",
+    "caranam",
+    "khyal",
+    "kriti",
+    "kirtana",
+    "tarana",
+    "bandish",
+    "thumri",
+    "bhajan",
+    "dadra"
+  ],
+  "tani_needles": [
+    "tani"
+  ],
+  "n_queries": 425,
+  "n_failed": 0,
+  "queries_by_section_type": {
+    "alaap": 70,
+    "composed": 344,
+    "tani": 11
+  },
+  "tracks_by_section_type": {
+    "alaap": 42,
+    "composed": 108,
+    "tani": 11
+  }
+}

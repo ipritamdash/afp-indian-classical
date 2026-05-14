@@ -1,0 +1,28 @@
+{
+  "cell_name": "main_1s",
+  "n_queries": 1000,
+  "n_no_match": 0,
+  "k_probe": 100,
+  "top_k": 10,
+  "alpha_sweep": [
+    0.0,
+    0.05,
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3
+  ],
+  "controls": [
+    "shuffled",
+    "isotropic"
+  ],
+  "control_alpha": 0.1,
+  "seed_shuffle": 20260512,
+  "seed_isotropic": 20260513,
+  "encode_seconds_median": 0.01166391372680664,
+  "rescore_seconds_median": 0.008363008499145508,
+  "candidates_median": 100,
+  "candidates_p95": 100,
+  "total_seconds": 26.3
+}

@@ -1,0 +1,21 @@
+{
+  "n_refs": 3,
+  "n_indexed": 3,
+  "n_failed": 0,
+  "n_fingerprints_total": 145479,
+  "total_wall_sec": 54.69,
+  "db_size_bytes": 15795328,
+  "fail_lines_head": [
+    "WARNING: An illegal reflective access operation has occurred",
+    "WARNING: Illegal reflective access by org.lmdbjava.ByteBufferProxy$AbstractByteBufferProxy (file:/Users/prita/Desktop/Audio%20Fingerprinting/afp_bench/external/Panako/build/libs/panako-2.1-all.jar) to field java.nio.Buffer.address",
+    "WARNING: Please consider reporting this to the maintainers of org.lmdbjava.ByteBufferProxy$AbstractByteBufferProxy",
+    "WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations",
+    "WARNING: All illegal access operations will be denied in a future release"
+  ],
+  "exit_code": 0,
+  "panako_id_to_ref": {
+    "1370490215": "hindustani_0_Raag_Shree",
+    "719393130": "hindustani_1_Nirgun_Bhajan",
+    "1288588194": "hindustani_2_Raag_Lagan_Gandhar"
+  }
+}

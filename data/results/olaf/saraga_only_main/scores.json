@@ -1,0 +1,78 @@
+{
+  "n_queries": 1000,
+  "n_results_rows": 2714,
+  "hr@1": 0.998,
+  "hr@1_ci95": [
+    0.9927,
+    0.9995
+  ],
+  "hr@1_n_hits": 998,
+  "hr@5": 0.999,
+  "hr@5_ci95": [
+    0.9944,
+    0.9998
+  ],
+  "hr@5_n_hits": 999,
+  "hr@10": 0.999,
+  "hr@10_ci95": [
+    0.9944,
+    0.9998
+  ],
+  "hr@10_n_hits": 999,
+  "mrr@5": 0.9983,
+  "mrr@5_n_with_hit": 999,
+  "mrr@10": 0.9983,
+  "mrr@10_n_with_hit": 999,
+  "n_no_match": 1,
+  "frac_no_match": 0.001,
+  "per_corpus": {
+    "carnatic": {
+      "hr@1": 0.998,
+      "hr@1_ci95": [
+        0.9888,
+        0.9996
+      ],
+      "n_queries": 500,
+      "hr@5": 1.0,
+      "hr@5_ci95": [
+        0.9924,
+        1.0
+      ]
+    },
+    "hindustani": {
+      "hr@1": 0.998,
+      "hr@1_ci95": [
+        0.9888,
+        0.9996
+      ],
+      "n_queries": 500,
+      "hr@5": 0.998,
+      "hr@5_ci95": [
+        0.9888,
+        0.9996
+      ]
+    }
+  },
+  "hr@1_no_twin": 0.9977,
+  "hr@1_no_twin_n_queries": 870,
+  "hr@1_no_twin_ci95": [
+    0.9917,
+    0.9994
+  ],
+  "hr@1_with_twin": 1.0,
+  "hr@1_with_twin_n_queries": 130,
+  "hr@1_with_twin_ci95": [
+    0.9713,
+    1.0
+  ],
+  "align_err_n": 998,
+  "align_err_median_sec": 0.002,
+  "align_err_p95_sec": 0.006,
+  "align_err_max_sec": 0.019,
+  "align_err_within_0.05s": 998,
+  "align_err_within_0.5s": 998,
+  "align_err_within_1.0s": 998,
+  "top1_near_at_0.05s": 0.998,
+  "top1_near": 0.998,
+  "top1_near_at_1.0s": 0.998
+}

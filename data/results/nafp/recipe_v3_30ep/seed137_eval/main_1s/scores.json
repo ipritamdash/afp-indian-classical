@@ -1,0 +1,7 @@
+{
+  "cell": "main_1s",
+  "n_queries": 1000,
+  "n_hits": 997,
+  "hr@1": 0.997,
+  "ckpt": "NAFP-NMFPrecipe-ckpt-10"
+}

@@ -1,0 +1,357 @@
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Shree by Deborshee Bhattacharya/Raag Shree/Raag Shree.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Lagan Gandhar & Nirgun Bhajan by Kumar Gandharva/Nirgun Bhajan/Nirgun Bhajan.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Lagan Gandhar & Nirgun Bhajan by Kumar Gandharva/Raag Lagan Gandhar/Raag Lagan Gandhar.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Kalyan, Bhimpalasi & Dhani by Satyasheel Deshpande/Raag Dhani/Raag Dhani.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Kalyan, Bhimpalasi & Dhani by Satyasheel Deshpande/Raag Bhimpalasi/Raag Bhimpalasi.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Kalyan, Bhimpalasi & Dhani by Satyasheel Deshpande/Raag Kalyan/Raag Kalyan.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Bageshree & Bhairavi Bhajan by Satyasheel Deshpande/Bhairavi Bhajan/Bhairavi Bhajan.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Bageshree & Bhairavi Bhajan by Satyasheel Deshpande/Raag Bageshree/Raag Bageshree.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Kedar & Jog by Ajoy Chakrabarty/Raag Kedar/Raag Kedar.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Kedar & Jog by Ajoy Chakrabarty/Raag Jog/Raag Jog.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Hindustani Alaps by Kaustuv Kanti Ganguli/Raag Lalit/Raag Lalit.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Hindustani Alaps by Kaustuv Kanti Ganguli/Raag Marwa/Raag Marwa.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Hindustani Alaps by Kaustuv Kanti Ganguli/Raag Yaman/Raag Yaman.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Hindustani Alaps by Kaustuv Kanti Ganguli/Raag Bilaskhani Todi/Raag Bilaskhani Todi.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Hindustani Alaps by Kaustuv Kanti Ganguli/Raag Madhukauns/Raag Madhukauns.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Hindustani Alaps by Kaustuv Kanti Ganguli/Raag Desh/Raag Desh.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Hindustani Alaps by Kaustuv Kanti Ganguli/Raag Puriya Dhanashree/Raag Puriya Dhanashree.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Hindustani Alaps by Kaustuv Kanti Ganguli/Raag Miyan Malhar/Raag Miyan Malhar.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Bhairav & Dhani by Kumar Gandharva/Raag Bhairav/Raag Bhairav.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Bhairav & Dhani by Kumar Gandharva/Raag Dhani/Raag Dhani.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Abhogi, Rageshree & Khamaj by Ajoy Chakrabarty/Raag Abhogi/Raag Abhogi.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Abhogi, Rageshree & Khamaj by Ajoy Chakrabarty/Raag Khamaj/Raag Khamaj.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Abhogi, Rageshree & Khamaj by Ajoy Chakrabarty/Raag Rageshri/Raag Rageshri.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Mian Malhar & Ramdasi Malhar by Deborshee Bhattacharya/Raag Mian Malhar/Raag Mian Malhar.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Mian Malhar & Ramdasi Malhar by Deborshee Bhattacharya/Raag Ramdasi Malhar/Raag Ramdasi Malhar.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Marwa & Shree by Omkar Dadarkar/Raag Marwa/Raag Marwa.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Marwa & Shree by Omkar Dadarkar/Raag Shree/Raag Shree.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Bihag by Deborshee Bhattacharya/Raag Bihag/Raag Bihag.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Mian Malhar & Ramdasi Malhar by Satyasheel Deshpande/Raag Mian Malhar/Raag Mian Malhar.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Mian Malhar & Ramdasi Malhar by Satyasheel Deshpande/Raag Ramdasi Malhar/Raag Ramdasi Malhar.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Bahar, Gaud Malhar & Yaman by Omkar Dadarkar/Raag Bahar/Raag Bahar.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Bahar, Gaud Malhar & Yaman by Omkar Dadarkar/Raag Yaman/Raag Yaman.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Bahar, Gaud Malhar & Yaman by Omkar Dadarkar/Raag Gaud Malhar/Raag Gaud Malhar.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Lalit & Bibhas by Omkar Dadarkar/Raag Lalit/Raag Lalit.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Lalit & Bibhas by Omkar Dadarkar/Raag Bibhas/Raag Bibhas.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Shree, Lalit Pancham & Bhairavi Thumri by Kaustuv Kanti Ganguli/Raag Lalit Pancham/Raag Lalit Pancham.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Shree, Lalit Pancham & Bhairavi Thumri by Kaustuv Kanti Ganguli/Bhairavi Thumri/Bhairavi Thumri.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Shree, Lalit Pancham & Bhairavi Thumri by Kaustuv Kanti Ganguli/Raag Shree/Raag Shree.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Bhimpalasi & Multani by Omkar Dadarkar/Raag Multani/Raag Multani.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Bhimpalasi & Multani by Omkar Dadarkar/Raag Bhimpalasi/Raag Bhimpalasi.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Jog & Kirwani Bhajan by Kaustuv Kanti Ganguli/Raag Jog/Raag Jog.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Jog & Kirwani Bhajan by Kaustuv Kanti Ganguli/Kirwani Bhajan/Kirwani Bhajan.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Bhatiyar & Bhairavi Thumri by Kaustuv Kanti Ganguli/Raag Bhatiyar/Raag Bhatiyar.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Bhatiyar & Bhairavi Thumri by Kaustuv Kanti Ganguli/Bhairavi Thumri/Bhairavi Thumri.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Abhogi & Megh by Anol Chatterjee/Raag Abhogi/Raag Abhogi.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Abhogi & Megh by Anol Chatterjee/Raag Megh/Raag Megh.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Puriya & Bhimpalasi by Brajeshwar Mukherjee/Raag Bhimpalasi/Raag Bhimpalasi.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Puriya & Bhimpalasi by Brajeshwar Mukherjee/Raag Puriya/Raag Puriya.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Sawani & Bahar by Ulhas Kashalkar/Raag Bahar/Raag Bahar.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Sawani & Bahar by Ulhas Kashalkar/Raag Sawani/Raag Sawani.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/New Signature by Brajeshwar Mukherjee/Irani Bhairavi Thumri/Irani Bhairavi Thumri.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/New Signature by Brajeshwar Mukherjee/Raag Bairagi/Raag Bairagi.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/New Signature by Brajeshwar Mukherjee/Raag Saraswati/Raag Saraswati.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Todi by Kumar Gandharva/Raag Todi/Raag Todi.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Malkauns, Chandrakauns & Majh Khamaj Thumri by Satyasheel Deshpande/Raag Chandrakauns/Raag Chandrakauns.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Malkauns, Chandrakauns & Majh Khamaj Thumri by Satyasheel Deshpande/Majh Khamaj Thumri/Majh Khamaj Thumri.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Malkauns, Chandrakauns & Majh Khamaj Thumri by Satyasheel Deshpande/Raag Malkauns/Raag Malkauns.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Jog & Hameer by Brajeshwar Mukherjee/Raag Hameer/Raag Hameer.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Jog & Hameer by Brajeshwar Mukherjee/Raag Jog/Raag Jog.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Geetinandan : Part-3 by Ajoy Chakrabarty/Bairagi/Bairagi.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Geetinandan : Part-3 by Ajoy Chakrabarty/Taal and Sur of Thekas/Taal and Sur of Thekas.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Geetinandan : Part-3 by Ajoy Chakrabarty/Shrutinandan Concept - an Introduction by Pandit Ajoy Chakrabarty/Shrutinandan Concept - an Introduction by Pandit Ajoy Chakrabarty.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Geetinandan : Part-3 by Ajoy Chakrabarty/Malkauns/Malkauns.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Geetinandan : Part-3 by Ajoy Chakrabarty/Multani/Multani.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Geetinandan : Part-3 by Ajoy Chakrabarty/Todi/Todi.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Geetinandan : Part-3 by Ajoy Chakrabarty/Nat Bhairon/Nat Bhairon.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Geetinandan : Part-3 by Ajoy Chakrabarty/Aahir Bhairon/Aahir Bhairon.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Geetinandan : Part-3 by Ajoy Chakrabarty/Sudh Sarang/Sudh Sarang.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Geetinandan : Part-3 by Ajoy Chakrabarty/Raageshree/Raageshree.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Geetinandan : Part-3 by Ajoy Chakrabarty/Sudh Kalyan/Sudh Kalyan.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Geetinandan : Part-3 by Ajoy Chakrabarty/Lyrics of all the Bandishes/Lyrics of all the Bandishes.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Geetinandan : Part-3 by Ajoy Chakrabarty/Bilaskhani Todi/Bilaskhani Todi.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Geetinandan : Part-3 by Ajoy Chakrabarty/Maru Bihag/Maru Bihag.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Geetinandan : Part-3 by Ajoy Chakrabarty/Kalavati/Kalavati.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Marwa & Hameer by Sameehan Kashalkar/Raag Marwa/Raag Marwa.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Marwa & Hameer by Sameehan Kashalkar/Raag Hameer/Raag Hameer.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Ahir Bhairon & Todi by Omkar Dadarkar/Raag Ahir Bhairon/Raag Ahir Bhairon.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Ahir Bhairon & Todi by Omkar Dadarkar/Raag Todi/Raag Todi.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Poorva & Gaud Malhar by Sameehan Kashalkar/Raag Poorva/Raag Poorva.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Poorva & Gaud Malhar by Sameehan Kashalkar/Raag Gaud Malhar/Raag Gaud Malhar.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Bihag & Bhairavi Dadra by Omkar Dadarkar/Bhairavi Dadra/Bhairavi Dadra.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Bihag & Bhairavi Dadra by Omkar Dadarkar/Raag Bihag/Raag Bihag.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Bhoopali & Paraj by Sameehan Kashalkar/Raag Paraj/Raag Paraj.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Bhoopali & Paraj by Sameehan Kashalkar/Raag Bhoopali/Raag Bhoopali.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Kedar & Sohani by Sameehan Kashalkar/Raag Kedar/Raag Kedar.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Kedar & Sohani by Sameehan Kashalkar/Raag Sohani/Raag Sohani.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Anaahata by Milind Malshe/Raag Khat Todi/Raag Khat Todi.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Anaahata by Milind Malshe/Raag Ramgauri & Gauri/Raag Ramgauri & Gauri.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Anaahata by Milind Malshe/Raag Dagori_Deepki/Raag Dagori_Deepki.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Anaahata by Milind Malshe/Raag Sohani/Raag Sohani.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Anaahata by Milind Malshe/Raag Triveni/Raag Triveni.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Anaahata by Milind Malshe/Raag Komal Rishav Aasavari/Raag Komal Rishav Aasavari.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Anaahata by Milind Malshe/Raag Sooha Kanada/Raag Sooha Kanada.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Anaahata by Milind Malshe/Raag Lalita Gauri/Raag Lalita Gauri.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Anaahata by Milind Malshe/Raag Hindol Pancham/Raag Hindol Pancham.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Anaahata by Milind Malshe/Raag Basanti Kedar/Raag Basanti Kedar.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Anaahata by Milind Malshe/Raag Nat Kamod/Raag Nat Kamod.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Anaahata by Milind Malshe/Raag Jogiya/Raag Jogiya.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Anaahata by Milind Malshe/Raag Jait Kalyan/Raag Jait Kalyan.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Anaahata by Milind Malshe/Raag Khokar/Raag Khokar.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Subha Chale Sham Dhale by Ajoy Chakrabarty/Raga Shree - Khayal/Raga Shree - Khayal.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Subha Chale Sham Dhale by Ajoy Chakrabarty/Introductory speech by Ajoy Chakrabarty/Introductory speech by Ajoy Chakrabarty.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Subha Chale Sham Dhale by Ajoy Chakrabarty/Introduction about Ajoy Chakrabarty/Introduction about Ajoy Chakrabarty.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Subha Chale Sham Dhale by Ajoy Chakrabarty/Thumri in Piloo/Thumri in Piloo.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Subha Chale Sham Dhale by Ajoy Chakrabarty/Raga Lalit - Khayal/Raga Lalit - Khayal.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Bhoopali & Gavti by Omkar Dadarkar/Raag Bhoopali/Raag Bhoopali.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Bhoopali & Gavti by Omkar Dadarkar/Raag Gavti/Raag Gavti.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_hindustani/saraga1.5_hindustani/Raag Shree by Kaustuv Kanti Ganguli/Raag Shree/Raag Shree.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Sumitra Nitin at Arkay by Sumitra Nitin/Dorakuna/Dorakuna.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Sumitra Nitin at Arkay by Sumitra Nitin/Ganamuda Panam/Ganamuda Panam.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Sumitra Nitin at Arkay by Sumitra Nitin/Chidambara Natarajam/Chidambara Natarajam.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Sumitra Nitin at Arkay by Sumitra Nitin/Vandalum/Vandalum.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Sumitra Nitin at Arkay by Sumitra Nitin/Thiruveragane Saveri Varnam/Thiruveragane Saveri Varnam.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Sumitra Nitin at Arkay by Sumitra Nitin/Rama Daya Judave/Rama Daya Judave.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Salem Gayatri Venkatesan at Arkay by Salem Gayatri Venkatesan/Neene Ballideno/Neene Ballideno.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Salem Gayatri Venkatesan at Arkay by Salem Gayatri Venkatesan/Paragu Matada/Paragu Matada.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Salem Gayatri Venkatesan at Arkay by Salem Gayatri Venkatesan/Palisomma Muddu Sarade/Palisomma Muddu Sarade.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Salem Gayatri Venkatesan at Arkay by Salem Gayatri Venkatesan/Ramakrishnaru Manege/Ramakrishnaru Manege.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Salem Gayatri Venkatesan at Arkay by Salem Gayatri Venkatesan/Bandadella Barali/Bandadella Barali.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Salem Gayatri Venkatesan at Arkay by Salem Gayatri Venkatesan/Tamburi Mitidava/Tamburi Mitidava.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Salem Gayatri Venkatesan at Arkay by Salem Gayatri Venkatesan/Sharanu Janakana/Sharanu Janakana.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Ashwath Narayanan at Arkay by Ashwath Narayanan/Thillana Purnachandrika/Ashwath Narayanan - Thillana Purnachandrika.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Ashwath Narayanan at Arkay by Ashwath Narayanan/Angakaram/Ashwath Narayanan - Angakaram.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Ashwath Narayanan at Arkay by Ashwath Narayanan/Samajavarada/Ashwath Narayanan - Samajavarada.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Ashwath Narayanan at Arkay by Ashwath Narayanan/Evarura/Ashwath Narayanan - Evarura.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Ashwath Narayanan at Arkay by Ashwath Narayanan/Eranapai/Ashwath Narayanan - Eranapai.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Ashwath Narayanan at Arkay by Ashwath Narayanan/Parama Purusham/Ashwath Narayanan - Parama Purusham.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Ashwath Narayanan at Arkay by Ashwath Narayanan/Marubari/Ashwath Narayanan - Marubari.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Ashwath Narayanan at Arkay by Ashwath Narayanan/Aparadhamula/Ashwath Narayanan - Aparadhamula.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Ashwath Narayanan at Arkay by Ashwath Narayanan/Sadabalarupapi Shlokam/Ashwath Narayanan - Sadabalarupapi Shlokam.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Vignesh Ishwar at Nada Inbam by Vignesh Ishwar/Hiranmayeem Lakshmeem/Vignesh Ishwar - Hiranmayeem Lakshmeem.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Vignesh Ishwar at Nada Inbam by Vignesh Ishwar/Niraimadi Mugam Thiruppugazh/Vignesh Ishwar - Niraimadi Mugam Thiruppugazh.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Vignesh Ishwar at Nada Inbam by Vignesh Ishwar/Evvari Bodhana/Vignesh Ishwar - Evvari Bodhana.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Vignesh Ishwar at Nada Inbam by Vignesh Ishwar/Sanchara Dhadhara/Vignesh Ishwar - Sanchara Dhadhara.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Vignesh Ishwar at Nada Inbam by Vignesh Ishwar/Lokavana Chatura/Vignesh Ishwar - Lokavana Chatura.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Vignesh Ishwar at Nada Inbam by Vignesh Ishwar/Idhuthaano Thillai Sthalam/Vignesh Ishwar - Idhuthaano Thillai Sthalam.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Vignesh Ishwar at Nada Inbam by Vignesh Ishwar/Amba Kamakshi/Vignesh Ishwar - Amba Kamakshi.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Vignesh Ishwar at Nada Inbam by Vignesh Ishwar/Vitthala Salaho Swamy/Vignesh Ishwar - Vitthala Salaho Swamy.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Vignesh Ishwar at Nada Inbam by Vignesh Ishwar/Pavamana Suthudu Mangalam/Vignesh Ishwar - Pavamana Suthudu Mangalam.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Vignesh Ishwar at Nada Inbam by Vignesh Ishwar/Karuna Ela Gante/Vignesh Ishwar - Karuna Ela Gante.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Vignesh Ishwar at Nada Inbam by Vignesh Ishwar/Gopanandana/Vignesh Ishwar - Gopanandana.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Live at Kamarajar Hall by Sanjay Subrahmanyan/Entara Nitana/Sanjay Subrahmanyan - Entara Nitana.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Live at Kamarajar Hall by Sanjay Subrahmanyan/Teerthakarayinile/Sanjay Subrahmanyan - Teerthakarayinile.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Live at Kamarajar Hall by Sanjay Subrahmanyan/Thillana Dhanashri/Sanjay Subrahmanyan - Thillana Dhanashri.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Live at Kamarajar Hall by Sanjay Subrahmanyan/Ozhukkam Uyirinum/Sanjay Subrahmanyan - Ozhukkam Uyirinum.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Live at Kamarajar Hall by Sanjay Subrahmanyan/Undan Paada Pankayam/Sanjay Subrahmanyan - Undan Paada Pankayam.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Live at Kamarajar Hall by Sanjay Subrahmanyan/Raagam Thaanam Pallavi/Sanjay Subrahmanyan - Raagam Thaanam Pallavi.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Live at Kamarajar Hall by Sanjay Subrahmanyan/Pavamana Suthudu/Sanjay Subrahmanyan - Pavamana Suthudu.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Live at Kamarajar Hall by Sanjay Subrahmanyan/Kamakshi/Sanjay Subrahmanyan - Kamakshi.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Live at Kamarajar Hall by Sanjay Subrahmanyan/Soundararajam/Sanjay Subrahmanyan - Soundararajam.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Live at Kamarajar Hall by Sanjay Subrahmanyan/Payum Oli Nee Yenakku/Sanjay Subrahmanyan - Payum Oli Nee Yenakku.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Live at Kamarajar Hall by Sanjay Subrahmanyan/Shatre Vilagi Irum/Sanjay Subrahmanyan - Shatre Vilagi Irum.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Live at Kamarajar Hall by Sanjay Subrahmanyan/Maname Ramanai Paada/Sanjay Subrahmanyan - Maname Ramanai Paada.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Akkarai Sisters at Arkay by Akkarai Sisters/Apparama Bhakti/Apparama Bhakti.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Akkarai Sisters at Arkay by Akkarai Sisters/Manadirkkugandhadu/Manadirkkugandhadu.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Akkarai Sisters at Arkay by Akkarai Sisters/Koti Janmani/Koti Janmani.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Akkarai Sisters at Arkay by Akkarai Sisters/Brova Barama/Brova Barama.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Akkarai Sisters at Arkay by Akkarai Sisters/Shankari Shankuru/Shankari Shankuru.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Akkarai Sisters at Arkay by Akkarai Sisters/Karunimpa Idi/Karunimpa Idi.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Akkarai Sisters at Arkay by Akkarai Sisters/Pavamana Suthudu Mangalam/Pavamana Suthudu Mangalam.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Akkarai Sisters at Arkay by Akkarai Sisters/Geeta Nayakan/Geeta Nayakan.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Akkarai Sisters at Arkay by Akkarai Sisters/Siddhi Vinayakam/Siddhi Vinayakam.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Akkarai Sisters at Arkay by Akkarai Sisters/Thillana Pahadi/Thillana Pahadi.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Dr S Sundar at Arkay by S Sundar/Enadhu Manam Kavalai/Enadhu Manam Kavalai.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Dr S Sundar at Arkay by S Sundar/Purahara Nandana/Purahara Nandana.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Dr S Sundar at Arkay by S Sundar/Nannu Brova Neeku/Nannu Brova Neeku.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Dr S Sundar at Arkay by S Sundar/Nera Nammiti/Nera Nammiti.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Dr S Sundar at Arkay by S Sundar/Parvathi Ninnu Neranammiti/Parvathi Ninnu Neranammiti.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Dr S Sundar at Arkay by S Sundar/Geetha Vaadya Natana/Geetha Vaadya Natana.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Dr S Sundar at Arkay by S Sundar/Sudhaamayee/Sudhaamayee.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Dr S Sundar at Arkay by S Sundar/Shloka Namaste Sarvalokaanam/Shloka Namaste Sarvalokaanam.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Dr S Sundar at Arkay by S Sundar/Vanajaksha Ninne Nammiti/Vanajaksha Ninne Nammiti.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Dr S Sundar at Arkay by S Sundar/Jaya Jaya Padmanabhanujese/Jaya Jaya Padmanabhanujese.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Dr S Sundar at Arkay by S Sundar/Devadi Devanukku Jaya Mangalam/Devadi Devanukku Jaya Mangalam.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Dr S Sundar at Arkay by S Sundar/Kannanai Paadu Maname/Kannanai Paadu Maname.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Dr S Sundar at Arkay by S Sundar/Paahi Maam Sri/Paahi Maam Sri.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Dr S Sundar at Arkay by S Sundar/Eppadi Manam Thunindhadho/Eppadi Manam Thunindhadho.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Vasundara Rajagopal at Arkay by Vasundara Rajagopal/Munnu Ravana/Munnu Ravana.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Vasundara Rajagopal at Arkay by Vasundara Rajagopal/Shlokham/Shlokham.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Vasundara Rajagopal at Arkay by Vasundara Rajagopal/Pranamamyaham Sri Prananatham/Pranamamyaham Sri Prananatham.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Vasundara Rajagopal at Arkay by Vasundara Rajagopal/Ni Ninaindhal Aagadhadhu/Ni Ninaindhal Aagadhadhu.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Vasundara Rajagopal at Arkay by Vasundara Rajagopal/Chandrashekharam Sada Bhajeham/Chandrashekharam Sada Bhajeham.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Vasundara Rajagopal at Arkay by Vasundara Rajagopal/Sri Jalandara/Sri Jalandara.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Vasundara Rajagopal at Arkay by Vasundara Rajagopal/Amba Nilambari/Amba Nilambari.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Vasundara Rajagopal at Arkay by Vasundara Rajagopal/Ninnuvina Marigalada/Ninnuvina Marigalada.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Vasundara Rajagopal at Arkay by Vasundara Rajagopal/Avani Sutha/Avani Sutha.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Kanakadurga Venkatesh at Arkay by Kanakadurga Venkatesh/Rama Neepai/Rama Neepai.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Kanakadurga Venkatesh at Arkay by Kanakadurga Venkatesh/Etulabrotuva/Etulabrotuva.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Kanakadurga Venkatesh at Arkay by Kanakadurga Venkatesh/Lokavana Chatura/Lokavana Chatura.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Kanakadurga Venkatesh at Arkay by Kanakadurga Venkatesh/Enthavedukonthu Raghava/Enthavedukonthu Raghava.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Kanakadurga Venkatesh at Arkay by Kanakadurga Venkatesh/Koluvamaregatha/Koluvamaregatha.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Kanakadurga Venkatesh at Arkay by Kanakadurga Venkatesh/Neevada Negana/Neevada Negana.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Kanakadurga Venkatesh at Arkay by Kanakadurga Venkatesh/Vara Leela Gana Lola/Vara Leela Gana Lola.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Mahati at Arkay by Mahati/Chinnanchiru Kiliye/Chinnanchiru Kiliye.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Mahati at Arkay by Mahati/Gopi Gopala Bala/Gopi Gopala Bala.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Mahati at Arkay by Mahati/Pavamana Suttudu Pattu/Pavamana Suttudu Pattu.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Mahati at Arkay by Mahati/Kannallavo Swami/Kannallavo Swami.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Mahati at Arkay by Mahati/Padavini/Padavini.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Mahati at Arkay by Mahati/Vandu Ketpaar Illayo/Vandu Ketpaar Illayo.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Mahati at Arkay by Mahati/Ragam Tanam Pallavi/Ragam Tanam Pallavi.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Mahati at Arkay by Mahati/Tillana/Tillana.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Mahati at Arkay by Mahati/Sharanagatha Vatsale/Sharanagatha Vatsale.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Mahati at Arkay by Mahati/Hiranmayeem/Hiranmayeem.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/N J Nandini in Arkay by N J Nandini/Sogasuga/Sogasuga.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/N J Nandini in Arkay by N J Nandini/Dharini Telusukonti/Dharini Telusukonti.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/N J Nandini in Arkay by N J Nandini/Merusamana/Merusamana.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/N J Nandini in Arkay by N J Nandini/Marugelara/Marugelara.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/N J Nandini in Arkay by N J Nandini/Karuna Ela Gante/Karuna Ela Gante.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Live at Vani Mahal by Sanjay Subrahmanyan/Pavamaana Suthudu Pattu/Sanjay Subrahmanyan - Pavamaana Suthudu Pattu.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Live at Vani Mahal by Sanjay Subrahmanyan/Maname Kanamum/Sanjay Subrahmanyan - Maname Kanamum.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Live at Vani Mahal by Sanjay Subrahmanyan/Ennadu Jootuno/Sanjay Subrahmanyan - Ennadu Jootuno.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Live at Vani Mahal by Sanjay Subrahmanyan/Paarengum/Sanjay Subrahmanyan - Paarengum.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Live at Vani Mahal by Sanjay Subrahmanyan/Saravanabhava Enum/Sanjay Subrahmanyan - Saravanabhava Enum.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Live at Vani Mahal by Sanjay Subrahmanyan/Karuvutranaal Mudalaaga/Sanjay Subrahmanyan - Karuvutranaal Mudalaaga.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Live at Vani Mahal by Sanjay Subrahmanyan/Aru marundu/Sanjay Subrahmanyan - Aru marundu.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Live at Vani Mahal by Sanjay Subrahmanyan/Eranapai/Sanjay Subrahmanyan - Eranapai.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Live at Vani Mahal by Sanjay Subrahmanyan/Pullum Silambena Kan/Sanjay Subrahmanyan - Pullum Silambena Kan.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Live at Vani Mahal by Sanjay Subrahmanyan/Sri Raghuvara Sugunaalaya/Sanjay Subrahmanyan - Sri Raghuvara Sugunaalaya.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Live at Vani Mahal by Sanjay Subrahmanyan/Ragam Thanam Pallavi - Shanmukhapriya/Sanjay Subrahmanyan - Ragam Thanam Pallavi - Shanmukhapriya.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Live at Vani Mahal by Sanjay Subrahmanyan/Sarasadalanayana/Sanjay Subrahmanyan - Sarasadalanayana.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Cherthala Ranganatha Sharma at Arkay by Cherthala Ranganatha Sharma/Rama Rama Guna Seema/Rama Rama Guna Seema.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Cherthala Ranganatha Sharma at Arkay by Cherthala Ranganatha Sharma/Prathi Vaaram Vaaram/Prathi Vaaram Vaaram.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Cherthala Ranganatha Sharma at Arkay by Cherthala Ranganatha Sharma/Varashiki Vahana/Varashiki Vahana.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Cherthala Ranganatha Sharma at Arkay by Cherthala Ranganatha Sharma/Idhu Thaano Thillai Sthalam/Idhu Thaano Thillai Sthalam.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Cherthala Ranganatha Sharma at Arkay by Cherthala Ranganatha Sharma/Bhuvini Dasudane/Bhuvini Dasudane.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Cherthala Ranganatha Sharma at Arkay by Cherthala Ranganatha Sharma/Karuna Nidhi Illalo/Karuna Nidhi Illalo.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Cherthala Ranganatha Sharma at Arkay by Cherthala Ranganatha Sharma/Tulasi Bilva/Tulasi Bilva.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Cherthala Ranganatha Sharma at Arkay by Cherthala Ranganatha Sharma/Shlokam - Shivah Shaktyayukto/Shlokam - Shivah Shaktyayukto.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Cherthala Ranganatha Sharma at Arkay by Cherthala Ranganatha Sharma/Velum Mayilume/Velum Mayilume.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Prema Rangarajan at Arkay by Prema Rangarajan/Tolinenu Jesina/Tolinenu Jesina.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Prema Rangarajan at Arkay by Prema Rangarajan/Kailasapathe/Kailasapathe.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Prema Rangarajan at Arkay by Prema Rangarajan/Shri Kamakshi Shritajana/Shri Kamakshi Shritajana.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Prema Rangarajan at Arkay by Prema Rangarajan/Thillana Vasanta/Thillana Vasanta.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Prema Rangarajan at Arkay by Prema Rangarajan/Nera Nammiti/Nera Nammiti.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Prema Rangarajan at Arkay by Prema Rangarajan/Lalitha Lavanga/Lalitha Lavanga.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Prema Rangarajan at Arkay by Prema Rangarajan/Thamarai Kangal/Thamarai Kangal.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Prema Rangarajan at Arkay by Prema Rangarajan/Gam Ganapate/Gam Ganapate.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Prema Rangarajan at Arkay by Prema Rangarajan/Karunajaladhe/Karunajaladhe.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Modhumudi Sudhakar at Arkay by Modhumudi Sudhakar/Ghandhamu Poyyaruga/Ghandhamu Poyyaruga.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Modhumudi Sudhakar at Arkay by Modhumudi Sudhakar/Koluvaiyunnade/Koluvaiyunnade.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Modhumudi Sudhakar at Arkay by Modhumudi Sudhakar/Entha Muddo/Entha Muddo.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Modhumudi Sudhakar at Arkay by Modhumudi Sudhakar/Paramatmudu/Paramatmudu.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Modhumudi Sudhakar at Arkay by Modhumudi Sudhakar/Giriraja Suta/Giriraja Suta.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Modhumudi Sudhakar at Arkay by Modhumudi Sudhakar/Paraloka Bhaya/Paraloka Bhaya.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Modhumudi Sudhakar at Arkay by Modhumudi Sudhakar/Dudukugala/Dudukugala.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Modhumudi Sudhakar at Arkay by Modhumudi Sudhakar/Telisi Rama/Telisi Rama.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Modhumudi Sudhakar at Arkay by Modhumudi Sudhakar/Eramuni/Eramuni.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Modhumudi Sudhakar at Arkay by Modhumudi Sudhakar/Mangalam Avanisutanatha/Mangalam Avanisutanatha.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Modhumudi Sudhakar at Arkay by Modhumudi Sudhakar/Edari Sancharintura/Edari Sancharintura.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Modhumudi Sudhakar at Arkay by Modhumudi Sudhakar/Rama Namam Bhajare/Rama Namam Bhajare.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Modhumudi Sudhakar at Arkay by Modhumudi Sudhakar/Shobillu Saptasvara/Shobillu Saptasvara.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Modhumudi Sudhakar at Arkay by Modhumudi Sudhakar/Sundari Nee Divya/Sundari Nee Divya.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Vidya Subramanian at Arkay by Vidya Subramanian/Vinakayunna Della/Vinakayunna Della.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Vidya Subramanian at Arkay by Vidya Subramanian/Janakipathe/Janakipathe.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Vidya Subramanian at Arkay by Vidya Subramanian/Shri Guruguhasya/Shri Guruguhasya.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Vidya Subramanian at Arkay by Vidya Subramanian/Jootamu Rare/Jootamu Rare.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Vidya Subramanian at Arkay by Vidya Subramanian/Thanaithilam Kattrerumai/Thanaithilam Kattrerumai.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Vidya Subramanian at Arkay by Vidya Subramanian/Kanakangaka Guha/Kanakangaka Guha.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Vidya Subramanian at Arkay by Vidya Subramanian/Shloka/Shloka.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Vidya Subramanian at Arkay by Vidya Subramanian/Thillana Hameerkalyani/Thillana Hameerkalyani.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Sanjay at Sastri Hall by Sanjay Subrahmanyan/Vanajakshi - Varnam/Sanjay Subrahmanyan - Vanajakshi - Varnam.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Sanjay at Sastri Hall by Sanjay Subrahmanyan/Teerthakarayinile/Sanjay Subrahmanyan - Teerthakarayinile.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Sanjay at Sastri Hall by Sanjay Subrahmanyan/Innamum Oru thalam/Sanjay Subrahmanyan - Innamum Oru thalam.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Sanjay at Sastri Hall by Sanjay Subrahmanyan/Nadopasana/Sanjay Subrahmanyan - Nadopasana.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Sanjay at Sastri Hall by Sanjay Subrahmanyan/Ganta mani aadudhu/Sanjay Subrahmanyan - Ganta mani aadudhu.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Sanjay at Sastri Hall by Sanjay Subrahmanyan/Janani/Sanjay Subrahmanyan - Janani.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Sanjay at Sastri Hall by Sanjay Subrahmanyan/Oorilen Kaani Illai/Sanjay Subrahmanyan - Oorilen Kaani Illai.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Sanjay at Sastri Hall by Sanjay Subrahmanyan/Ramakrishnaru Manaegae/Sanjay Subrahmanyan - Ramakrishnaru Manaegae.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Sanjay at Sastri Hall by Sanjay Subrahmanyan/Uppum karpuramum/Sanjay Subrahmanyan - Uppum karpuramum.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Sanjay at Sastri Hall by Sanjay Subrahmanyan/Chalamelara Saketha Rama/Sanjay Subrahmanyan - Chalamelara Saketha Rama.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Sanjay at Sastri Hall by Sanjay Subrahmanyan/Kalilo Hari Smrana/Sanjay Subrahmanyan - Kalilo Hari Smrana.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Sanjay at Sastri Hall by Sanjay Subrahmanyan/Ninnaiye rathi/Sanjay Subrahmanyan - Ninnaiye rathi.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Sanjay at Sastri Hall by Sanjay Subrahmanyan/Mangalam/Sanjay Subrahmanyan - Mangalam.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Sanjay at Sastri Hall by Sanjay Subrahmanyan/Deenarakshaka/Sanjay Subrahmanyan - Deenarakshaka.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Sanjay at Sastri Hall by Sanjay Subrahmanyan/O Rangashayee/Sanjay Subrahmanyan - O Rangashayee.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Sanjay at Sastri Hall by Sanjay Subrahmanyan/Sama geeta priyan/Sanjay Subrahmanyan - Sama geeta priyan.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Sanjay at Sastri Hall by Sanjay Subrahmanyan/Karupuram Naarumo/Sanjay Subrahmanyan - Karupuram Naarumo.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Sanjay at Sastri Hall by Sanjay Subrahmanyan/Va vela va/Sanjay Subrahmanyan - Va vela va.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Kuldeep Pai at Arkay by Kuldeep Pai/Gange Maam Pahi/Gange Maam Pahi.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Kuldeep Pai at Arkay by Kuldeep Pai/Arul Seya Vendum Ayya/Arul Seya Vendum Ayya.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Kuldeep Pai at Arkay by Kuldeep Pai/Kaalaharanamelara/Kaalaharanamelara.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Kuldeep Pai at Arkay by Kuldeep Pai/Vasudeva Sutam Devam/Vasudeva Sutam Devam.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Kuldeep Pai at Arkay by Kuldeep Pai/Brochevarevarura/Brochevarevarura.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Kuldeep Pai at Arkay by Kuldeep Pai/Thappi Bratikipova/Thappi Bratikipova.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Kuldeep Pai at Arkay by Kuldeep Pai/Krishna Nee Begane Baaro/Krishna Nee Begane Baaro.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Kuldeep Pai at Arkay by Kuldeep Pai/Kari Kalabha Mukham/Kari Kalabha Mukham.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/V Shankarnarayanan at Arkay by V Shankaranarayanan/Muruga Muruga Muruga/Muruga Muruga Muruga.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/V Shankarnarayanan at Arkay by V Shankaranarayanan/Chenduril Nindradum Kanda/Chenduril Nindradum Kanda.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/V Shankarnarayanan at Arkay by V Shankaranarayanan/Ninne Bhajana/Ninne Bhajana.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/V Shankarnarayanan at Arkay by V Shankaranarayanan/Nera Nammiti/Nera Nammiti.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/V Shankarnarayanan at Arkay by V Shankaranarayanan/Dinamani Vamsa/Dinamani Vamsa.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/V Shankarnarayanan at Arkay by V Shankaranarayanan/Chakkani Raja/Chakkani Raja.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/V Shankarnarayanan at Arkay by V Shankaranarayanan/Ardhanareeshwaram/Ardhanareeshwaram.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/V Shankarnarayanan at Arkay by V Shankaranarayanan/Pavamana Suthudu Pattu/Pavamana Suthudu Pattu.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/V Shankarnarayanan at Arkay by V Shankaranarayanan/Shloka/Shloka.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Sumithra Vasudev at Arkay by Sumithra Vasudev/Aaniraimekkani/Aaniraimekkani.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Sumithra Vasudev at Arkay by Sumithra Vasudev/Vanajaksha Ninne Kori/Vanajaksha Ninne Kori.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Sumithra Vasudev at Arkay by Sumithra Vasudev/Karuninchutakidi/Karuninchutakidi.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Sumithra Vasudev at Arkay by Sumithra Vasudev/Va Va Brindavana/Va Va Brindavana.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Sumithra Vasudev at Arkay by Sumithra Vasudev/Mati Matiki/Mati Matiki.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Sumithra Vasudev at Arkay by Sumithra Vasudev/Sri Guru Na Palitosmi/Sri Guru Na Palitosmi.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Sumithra Vasudev at Arkay by Sumithra Vasudev/Thoomani Madatthu/Thoomani Madatthu.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Sumithra Vasudev at Arkay by Sumithra Vasudev/Ramabhi Rama Manasu/Ramabhi Rama Manasu.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Sumithra Vasudev at Arkay by Sumithra Vasudev/Mangalam Kosalendraya/Mangalam Kosalendraya.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Sumithra Vasudev at Arkay by Sumithra Vasudev/Sri Vidhya Rajagopala/Sri Vidhya Rajagopala.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/A V K Rajasimhan at Arkay by Angarai V K Rajasimhan/Shloka Sri Ramachandra Shrita Parijata/Shloka Sri Ramachandra Shrita Parijata.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/A V K Rajasimhan at Arkay by Angarai V K Rajasimhan/Nera Nammiti/Nera Nammiti.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/A V K Rajasimhan at Arkay by Angarai V K Rajasimhan/Sri Kantimatim/Sri Kantimatim.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/A V K Rajasimhan at Arkay by Angarai V K Rajasimhan/Athirum Kazhal/Athirum Kazhal.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/A V K Rajasimhan at Arkay by Angarai V K Rajasimhan/Siva Siva Siva Yenarada/Siva Siva Siva Yenarada.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/A V K Rajasimhan at Arkay by Angarai V K Rajasimhan/Kanukontini/Kanukontini.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Manda Sudharani at Arkay by Manda Sudharani/Sami Dayajuda/Sami Dayajuda.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Manda Sudharani at Arkay by Manda Sudharani/Giriraja Suta/Giriraja Suta.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Manda Sudharani at Arkay by Manda Sudharani/Ananda Sagara/Ananda Sagara.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Manda Sudharani at Arkay by Manda Sudharani/Bayarani Bhalite/Bayarani Bhalite.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Manda Sudharani at Arkay by Manda Sudharani/Enta Bhagyamu/Enta Bhagyamu.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Manda Sudharani at Arkay by Manda Sudharani/Budham Aashrayami/Budham Aashrayami.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Manda Sudharani at Arkay by Manda Sudharani/Parama Pavana Rama/Parama Pavana Rama.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Manda Sudharani at Arkay by Manda Sudharani/Pavamana Suthudu Mangalam/Pavamana Suthudu Mangalam.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Manda Sudharani at Arkay by Manda Sudharani/Thillana Rageshri/Thillana Rageshri.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Manda Sudharani at Arkay by Manda Sudharani/RTP Andholika/RTP Andholika.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Manda Sudharani at Arkay by Manda Sudharani/Sarasamukhi Sakala/Sarasamukhi Sakala.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Srividya Janakiraman at Arkay by Srividya Janakiraman/Parvathi Ninu Ne Nera Nammithi/Parvathi Ninu Ne Nera Nammithi.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Srividya Janakiraman at Arkay by Srividya Janakiraman/Nee Sari evvaramma/Nee Sari evvaramma.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Srividya Janakiraman at Arkay by Srividya Janakiraman/Jaya Jaya Janaki Kantha/Jaya Jaya Janaki Kantha.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Srividya Janakiraman at Arkay by Srividya Janakiraman/Santhamu leka Sowkyamu ledu/Santhamu leka Sowkyamu ledu.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Srividya Janakiraman at Arkay by Srividya Janakiraman/Sarasuda Ninne Kori/Sarasuda Ninne Kori.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Srividya Janakiraman at Arkay by Srividya Janakiraman/Gnanamosaga Rada/Gnanamosaga Rada.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Srividya Janakiraman at Arkay by Srividya Janakiraman/Nenindal Agaadadu undo/Nenindal Agaadadu undo.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Srividya Janakiraman at Arkay by Srividya Janakiraman/Sri Dundurge Siva Samsaare/Sri Dundurge Siva Samsaare.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Rithvik Raja at Arkay by Rithvik Raja/Madhava Mamava/Rithvik Raja - Madhava Mamava.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Rithvik Raja at Arkay by Rithvik Raja/Ramachandraya Mangalam/Rithvik Raja - Ramachandraya Mangalam.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Rithvik Raja at Arkay by Rithvik Raja/Sapasyat Kausalya/Rithvik Raja - Sapasyat Kausalya.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Rithvik Raja at Arkay by Rithvik Raja/Seetapati Namanasuna/Rithvik Raja - Seetapati Namanasuna.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Rithvik Raja at Arkay by Rithvik Raja/Karunimpa Idi/Rithvik Raja - Karunimpa Idi.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Rithvik Raja at Arkay by Rithvik Raja/Endaro Mahanubhavulu/Rithvik Raja - Endaro Mahanubhavulu.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Rithvik Raja at Arkay by Rithvik Raja/Bhogeendra Shayinam/Rithvik Raja - Bhogeendra Shayinam.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Rithvik Raja at Arkay by Rithvik Raja/Thillana Senchurutti/Rithvik Raja - Thillana Senchurutti.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Rithvik Raja at Arkay by Rithvik Raja/Chintayama Kanda/Rithvik Raja - Chintayama Kanda.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Rithvik Raja at Arkay by Rithvik Raja/Emani Migula/Rithvik Raja - Emani Migula.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Rithvik Raja at Arkay by Rithvik Raja/Saraguna Palimpa/Rithvik Raja - Saraguna Palimpa.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/KP Nandini at Arkay by KP Nandini/Nadatanum Anisham/Nadatanum Anisham.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/KP Nandini at Arkay by KP Nandini/Seethamma/Seethamma.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/KP Nandini at Arkay by KP Nandini/Janakipathe Jaya Karunya Jaladhe/Janakipathe Jaya Karunya Jaladhe.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/KP Nandini at Arkay by KP Nandini/Eppadi Padinaro/Eppadi Padinaro.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/KP Nandini at Arkay by KP Nandini/Manasaramathi/Manasaramathi.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/KP Nandini at Arkay by KP Nandini/Tillana/Tillana.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/KP Nandini at Arkay by KP Nandini/Bhavamulona/Bhavamulona.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/KP Nandini at Arkay by KP Nandini/Ardhanarishwaram/Ardhanarishwaram.mp3.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Chaitra Sairam at Arkay by Chaitra Sairam/Shri Subramanyaya Namaste/Chaitra Sairam - Shri Subramanyaya Namaste.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Chaitra Sairam at Arkay by Chaitra Sairam/Mamava Pattabhi Rama/Chaitra Sairam - Mamava Pattabhi Rama.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Chaitra Sairam at Arkay by Chaitra Sairam/Kamalamba Samrakshatu/Chaitra Sairam - Kamalamba Samrakshatu.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Chaitra Sairam at Arkay by Chaitra Sairam/Govardhana Girisham/Chaitra Sairam - Govardhana Girisham.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Chaitra Sairam at Arkay by Chaitra Sairam/Ardhanareeshwaram/Chaitra Sairam - Ardhanareeshwaram.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Chaitra Sairam at Arkay by Chaitra Sairam/Anandaamrutakarshini/Chaitra Sairam - Anandaamrutakarshini.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Chaitra Sairam at Arkay by Chaitra Sairam/Rakta Ganapatim/Chaitra Sairam - Rakta Ganapatim.mp3
+/Users/prita/Desktop/Audio Fingerprinting/afp_bench/data/mirdata/saraga_carnatic/saraga1.5_carnatic/Chaitra Sairam at Arkay by Chaitra Sairam/Gange Maampahi/Chaitra Sairam - Gange Maampahi.mp3

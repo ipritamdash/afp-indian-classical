@@ -1,0 +1,9 @@
+{
+  "cell": "ablation_1s",
+  "n_queries": 632,
+  "n_hits": 632,
+  "hr@1": 1.0,
+  "baseline_hr@1": 0.983,
+  "delta_hr@1": 0.017000000000000015,
+  "ckpt": "NMFP-triplet ckpt-100 (Araz et al. ISMIR 2025)"
+}

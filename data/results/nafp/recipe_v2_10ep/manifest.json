@@ -1,0 +1,7 @@
+{
+  "ckpt_index": 10,
+  "training_minutes": 11.4,
+  "config_F_MIN": 160.0,
+  "config_TR_SEG_MODE": "random_oneshot",
+  "config_MAX_EPOCH": 10
+}

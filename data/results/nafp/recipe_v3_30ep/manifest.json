@@ -1,0 +1,21 @@
+{
+  "seeds": [
+    42,
+    137,
+    2026
+  ],
+  "recipe_v3": {
+    "max_epoch": 30,
+    "tr_batch_sz": 320,
+    "tr_n_anchor": 160,
+    "f_min": 160.0,
+    "tr_seg_mode": "random_oneshot",
+    "loss": "NTxent"
+  },
+  "training_minutes_per_seed": {
+    "42": 26.715826749801636,
+    "137": 26.784929382801057,
+    "2026": 26.75127818584442
+  },
+  "total_minutes": 80.3
+}

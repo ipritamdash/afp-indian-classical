@@ -1,0 +1,18 @@
+{
+  "version": "v5-real-training",
+  "epochs_requested": 10,
+  "reduce_items_p": 0,
+  "gpus_visible": 1,
+  "gpu_matmul_ms": 22.6,
+  "train_seconds": 19019.1,
+  "total_seconds": 19068.5,
+  "tf_version": "2.19.0",
+  "checkpoint_files": [
+    "ckpt-10.index",
+    "ckpt-2.index",
+    "ckpt-4.index",
+    "ckpt-6.index",
+    "ckpt-8.index",
+    "ckpt-9.index"
+  ]
+}

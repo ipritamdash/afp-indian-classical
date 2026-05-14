@@ -1,0 +1,55 @@
+{
+  "cell": "main_1s",
+  "nafp": {
+    "n": 1000,
+    "hits": 983,
+    "hr@1": 0.983,
+    "ci": [
+      0.9729438156287651,
+      0.9893594003367818
+    ],
+    "n_miss": 17,
+    "n_miss_same_artist": 14,
+    "n_miss_same_raaga": 0,
+    "n_miss_diff_corpus": 1
+  },
+  "nmfp": {
+    "n": 1000,
+    "hits": 1000,
+    "hr@1": 1.0,
+    "ci": [
+      0.9961731014136095,
+      1
+    ],
+    "n_miss": 0,
+    "n_miss_same_artist": 0,
+    "n_miss_same_raaga": 0,
+    "n_miss_diff_corpus": 0
+  },
+  "mcnemar": {
+    "b": 0,
+    "c": 17,
+    "delta": 17,
+    "p": 1.52587890625e-05
+  },
+  "fixed_by_nmfp": [
+    "carnatic_t0004_q0",
+    "carnatic_t0005_q0",
+    "carnatic_t0022_q1",
+    "carnatic_t0022_q2",
+    "carnatic_t0039_q2",
+    "carnatic_t0044_q0",
+    "carnatic_t0053_q1",
+    "carnatic_t0077_q1",
+    "carnatic_t0095_q1",
+    "carnatic_t0097_q3",
+    "hindustani_t0012_q1",
+    "hindustani_t0013_q2",
+    "hindustani_t0016_q2",
+    "hindustani_t0016_q3",
+    "hindustani_t0016_q4",
+    "hindustani_t0064_q3",
+    "hindustani_t0073_q4"
+  ],
+  "broken_by_nmfp": []
+}

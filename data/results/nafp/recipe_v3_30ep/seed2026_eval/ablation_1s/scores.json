@@ -1,0 +1,7 @@
+{
+  "cell": "ablation_1s",
+  "n_queries": 632,
+  "n_hits": 626,
+  "hr@1": 0.990506329113924,
+  "ckpt": "NAFP-NMFPrecipe-ckpt-10"
+}

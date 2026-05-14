@@ -1,0 +1,28 @@
+{
+  "cell_name": "ablation_3s",
+  "n_queries": 632,
+  "n_no_match": 0,
+  "k_probe": 100,
+  "top_k": 10,
+  "alpha_sweep": [
+    0.0,
+    0.05,
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3
+  ],
+  "controls": [
+    "shuffled",
+    "isotropic"
+  ],
+  "control_alpha": 0.1,
+  "seed_shuffle": 20260512,
+  "seed_isotropic": 20260513,
+  "encode_seconds_median": 0.030324697494506836,
+  "rescore_seconds_median": 0.041899919509887695,
+  "candidates_median": 428,
+  "candidates_p95": 469,
+  "total_seconds": 53.0
+}

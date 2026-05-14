@@ -1,0 +1,11 @@
+{
+  "version": "v1-inference",
+  "tf_version": "2.19.0",
+  "gpu_matmul_ms": 23.3,
+  "index_seconds": 2379.4,
+  "total_seconds": 2763.9,
+  "ckpt_index": 10,
+  "n_refs": 357,
+  "n_segments_total": 690414,
+  "n_queries": 1000
+}

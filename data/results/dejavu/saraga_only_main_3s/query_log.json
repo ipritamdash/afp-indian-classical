@@ -1,0 +1,10 @@
+{
+  "n_queries": 1000,
+  "n_with_match": 1000,
+  "n_no_match": 0,
+  "latency_ms_p50": 103.87349128723145,
+  "latency_ms_p95": 160.33923625946045,
+  "latency_ms_p99": 210.91407537460324,
+  "latency_ms_max": 323.58312606811523,
+  "total_wall_sec": 110.88
+}

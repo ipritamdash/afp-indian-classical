@@ -1,0 +1,24 @@
+{
+  "cell": "main_5s",
+  "n_queries": 1000,
+  "baseline_hr@1": 0.983,
+  "results": {
+    "baseline": {
+      "n_hits": 999,
+      "hr@1": 0.999,
+      "delta_vs_base": 0.016000000000000014
+    },
+    "inv_softmax": {
+      "n_hits": 999,
+      "hr@1": 0.999,
+      "delta_vs_base": 0.016000000000000014
+    },
+    "csls": {
+      "n_hits": 998,
+      "hr@1": 0.998,
+      "delta_vs_base": 0.015000000000000013
+    }
+  },
+  "anchor_pool_size": 4096,
+  "anchor_seed": 20260513
+}

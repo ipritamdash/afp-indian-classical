@@ -1,0 +1,39 @@
+{
+  "cell": "main_5s",
+  "nafp": {
+    "n": 1000,
+    "hits": 999,
+    "hr@1": 0.999,
+    "ci": [
+      0.9943572970398398,
+      0.9998234581709429
+    ],
+    "n_miss": 1,
+    "n_miss_same_artist": 1,
+    "n_miss_same_raaga": 0,
+    "n_miss_diff_corpus": 0
+  },
+  "nmfp": {
+    "n": 1000,
+    "hits": 1000,
+    "hr@1": 1.0,
+    "ci": [
+      0.9961731014136095,
+      1
+    ],
+    "n_miss": 0,
+    "n_miss_same_artist": 0,
+    "n_miss_same_raaga": 0,
+    "n_miss_diff_corpus": 0
+  },
+  "mcnemar": {
+    "b": 0,
+    "c": 1,
+    "delta": 1,
+    "p": 1.0
+  },
+  "fixed_by_nmfp": [
+    "hindustani_t0016_q2"
+  ],
+  "broken_by_nmfp": []
+}

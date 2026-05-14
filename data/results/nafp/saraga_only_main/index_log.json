@@ -1,0 +1,10 @@
+{
+  "n_refs": 357,
+  "n_segments_total": 690414,
+  "ref_embs_mb": 353.9,
+  "index_seconds": 2379.4,
+  "fs": 8000,
+  "win_samples": 8000,
+  "hop_samples": 4000,
+  "checkpoint_index": 10
+}

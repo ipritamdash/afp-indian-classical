@@ -1,0 +1,19 @@
+{
+  "manifest_version": "1.0",
+  "global_seed": 20260511,
+  "skip_head_sec": 10.0,
+  "skip_tail_sec": 10.0,
+  "min_track_sec": 90.0,
+  "queries_per_track": 5,
+  "longest_query_sec": 10.0,
+  "jitter_sec": 0.5,
+  "target_sr": 16000,
+  "target_channels": 1,
+  "test_source_n": 100,
+  "n_refs": 249,
+  "n_test_source": 100,
+  "n_queries": 500,
+  "n_skipped": 0,
+  "corpus": "carnatic",
+  "dataset_name": "saraga_carnatic"
+}

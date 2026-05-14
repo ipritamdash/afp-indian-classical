@@ -1,0 +1,25 @@
+[project]
+name = "afp-bench"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    "cffi>=2.0.0",
+    "datasets>=4.8.5",
+    "faiss-cpu>=1.13.2",
+    "huggingface-hub>=1.14.0",
+    "imageio-ffmpeg>=0.6.0",
+    "kaggle>=1.8",
+    "kagglehub>=1.0.1",
+    "kapre==0.3.7",
+    "matplotlib>=3.10.9",
+    "mirdata>=1.0.0",
+    "pandas>=3.0.2",
+    "pgserver>=0.1.4",
+    "psycopg2-binary>=2.9.12",
+    "py7zr>=1.1.0",
+    "pyarrow>=24.0.0",
+    "pydub>=0.25.1",
+    "tensorflow==2.19.0",
+    "tf-keras<2.21",
+]

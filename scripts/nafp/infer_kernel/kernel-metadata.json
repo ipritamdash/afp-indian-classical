@@ -1,0 +1,17 @@
+{
+  "id": "aboutpritam/nafp-saraga-inference",
+  "title": "NAFP Saraga Inference",
+  "code_file": "kaggle_infer.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": "true",
+  "enable_gpu": "true",
+  "enable_internet": "true",
+  "dataset_sources": [
+    "aboutpritam/nafp-infer-bundle",
+    "aboutpritam/nafp-wheels",
+    "aboutpritam/saraga-refs-flat"
+  ],
+  "competition_sources": [],
+  "kernel_sources": []
+}

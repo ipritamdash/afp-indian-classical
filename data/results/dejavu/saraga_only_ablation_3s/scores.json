@@ -1,0 +1,107 @@
+{
+  "n_queries": 632,
+  "n_results_rows": 6320,
+  "hr@1": 0.9778,
+  "hr@1_ci95": [
+    0.9632,
+    0.9868
+  ],
+  "hr@1_n_hits": 618,
+  "hr@5": 0.9984,
+  "hr@5_ci95": [
+    0.9911,
+    0.9997
+  ],
+  "hr@5_n_hits": 631,
+  "hr@10": 0.9984,
+  "hr@10_ci95": [
+    0.9911,
+    0.9997
+  ],
+  "hr@10_n_hits": 631,
+  "mrr@5": 0.9862,
+  "mrr@5_n_with_hit": 631,
+  "mrr@10": 0.9862,
+  "mrr@10_n_with_hit": 631,
+  "n_no_match": 0,
+  "frac_no_match": 0.0,
+  "per_corpus": {
+    "carnatic": {
+      "hr@1": 0.9694,
+      "hr@1_ci95": [
+        0.9484,
+        0.982
+      ],
+      "n_queries": 425,
+      "hr@5": 0.9976,
+      "hr@5_ci95": [
+        0.9868,
+        0.9996
+      ]
+    },
+    "hindustani": {
+      "hr@1": 0.9952,
+      "hr@1_ci95": [
+        0.9731,
+        0.9991
+      ],
+      "n_queries": 207,
+      "hr@5": 1.0,
+      "hr@5_ci95": [
+        0.9818,
+        1.0
+      ]
+    }
+  },
+  "per_section_type": {
+    "alaap": {
+      "hr@1": 0.9854,
+      "hr@1_ci95": [
+        0.9483,
+        0.996
+      ],
+      "n_queries": 137,
+      "hr@5": 1.0,
+      "hr@5_ci95": [
+        0.9727,
+        1.0
+      ]
+    },
+    "composed": {
+      "hr@1": 0.9752,
+      "hr@1_ci95": [
+        0.9572,
+        0.9858
+      ],
+      "n_queries": 484,
+      "hr@5": 0.9979,
+      "hr@5_ci95": [
+        0.9884,
+        0.9996
+      ]
+    },
+    "tani": {
+      "hr@1": 1.0,
+      "hr@1_ci95": [
+        0.7412,
+        1.0
+      ],
+      "n_queries": 11,
+      "hr@5": 1.0,
+      "hr@5_ci95": [
+        0.7412,
+        1.0
+      ]
+    }
+  },
+  "align_err_n": 618,
+  "align_err_median_sec": 0.0103,
+  "align_err_p95_sec": 0.0228,
+  "align_err_max_sec": 1005.4466,
+  "align_err_within_0.05s": 616,
+  "align_err_within_0.5s": 616,
+  "align_err_within_1.0s": 616,
+  "top1_near_at_0.05s": 0.9747,
+  "top1_near": 0.9747,
+  "top1_near_at_1.0s": 0.9747
+}

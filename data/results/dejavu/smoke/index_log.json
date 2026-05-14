@@ -1,0 +1,17 @@
+{
+  "n_refs": 3,
+  "n_indexed": 3,
+  "n_failed": 0,
+  "failed_samples": [],
+  "worker_fp_sec_sum": 96.5,
+  "insert_sec": 9.27,
+  "total_wall_sec": 55.45,
+  "n_hashes_total": 668914,
+  "db_size_bytes": 1186336239,
+  "n_workers": 3,
+  "songid_to_refid": {
+    "1": "hindustani_1_Nirgun_Bhajan",
+    "2": "hindustani_0_Raag_Shree",
+    "3": "hindustani_2_Raag_Lagan_Gandhar"
+  }
+}

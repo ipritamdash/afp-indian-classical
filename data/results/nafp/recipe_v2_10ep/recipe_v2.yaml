@@ -1,0 +1,73 @@
+DIR:
+  SOURCE_ROOT_DIR: /content/data/neural-audio-fp-dataset/music/
+  BG_ROOT_DIR: /content/data/neural-audio-fp-dataset/aug/bg/
+  IR_ROOT_DIR: /content/data/neural-audio-fp-dataset/aug/ir/
+  SPEECH_ROOT_DIR: /content/data/neural-audio-fp-dataset/aug/speech/common_voice_8k/en/
+  OUTPUT_ROOT_DIR: /content/logs/emb/
+  LOG_ROOT_DIR: /content/logs/
+DATA_SEL:
+  TRAIN: 10k_icassp
+  TR_SEG_MODE: random_oneshot
+  TEST_DUMMY_DB: 10k_full
+  TEST_QUERY_DB: unseen_icassp
+  REDUCE_ITEMS_P: 0
+MODEL:
+  FEAT: melspec
+  FS: 8000
+  DUR: 1.0
+  HOP: 0.5
+  STFT_WIN: 1024
+  STFT_HOP: 256
+  F_MIN: 160.0
+  F_MAX: 4000.0
+  N_MELS: 256
+  EMB_SZ: 128
+  BN: layer_norm2d
+BSZ:
+  TR_BATCH_SZ: 120
+  TR_N_ANCHOR: 60
+  VAL_BATCH_SZ: 120
+  VAL_N_ANCHOR: 60
+  TS_BATCH_SZ: 125
+TRAIN:
+  MAX_EPOCH: 10
+  OPTIMIZER: Adam
+  LR: 1e-4
+  LR_SCHEDULE: cos
+  CHECKPOINT_KEEP_N_HOUR: 1
+  TENSORBOARD: true
+  SAVE_IMG: true
+  MINI_TEST_IN_TRAIN: false
+LOSS:
+  LOSS_MODE: NTxent
+  TAU: 0.05
+  MARGIN: 0.5
+TD_AUG:
+  TR_SNR:
+  - 0
+  - 10
+  TS_SNR:
+  - 0
+  - 10
+  VAL_SNR:
+  - 0
+  - 10
+  TR_SPEECH_AUG: false
+  TS_SPEECH_AUG: false
+  VAL_SPEECH_AUG: false
+  TR_BG_AUG: true
+  TS_BG_AUG: true
+  VAL_BG_AUG: true
+  TR_IR_AUG: true
+  TS_IR_AUG: true
+  VAL_IR_AUG: true
+SPEC_AUG:
+  SPECAUG_CHAIN:
+  - cutout
+  - horizontal
+  SPECAUG_PROBS: 1.0
+  SPECAUG_N_HOLES: 1
+  SPECAUG_HOLE_FILL: zeros
+DEVICE:
+  CPU_N_WORKERS: 4
+  CPU_MAX_QUEUE: 10

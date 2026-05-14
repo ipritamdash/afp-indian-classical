@@ -1,0 +1,98 @@
+# ────────────────────────────────────────────────────────────────────────
+# Secrets — NEVER commit
+# ────────────────────────────────────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+.kaggle/
+
+# ────────────────────────────────────────────────────────────────────────
+# Python build artifacts
+# ────────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[co]
+*.so
+*.egg
+*.egg-info/
+build/
+dist/
+wheels/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Editor / OS
+.DS_Store
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# ────────────────────────────────────────────────────────────────────────
+# Audio data (re-fetchable from Zenodo / Kaggle / FMA-official)
+# Saraga 1.5 source MP3s: fetch via mirdata
+# FMA-medium audio: fetch via Kaggle
+# Generated query WAVs + ref WAVs: regenerable from manifests
+# NMFP teacher weights (AGPLv3): fetch via Zenodo
+# Augmentation pools (TUT / Common-Voice etc.)
+# ────────────────────────────────────────────────────────────────────────
+data/mirdata/
+data/fma/
+data/queries/
+data/queries_1s/
+data/queries_3s/
+data/queries_5s/
+data/queries_44k/
+data/queries_ablation/
+data/queries_ablation_1s/
+data/queries_ablation_3s/
+data/queries_ablation_5s/
+data/queries_ablation_44k/
+data/refs/
+data/nmfp/
+data/aug/
+data/inspection/
+
+# ────────────────────────────────────────────────────────────────────────
+# Large model artifacts (>100MB; track via Hugging Face / Drive instead)
+# Memmaps + checkpoints regenerable from training scripts
+# ────────────────────────────────────────────────────────────────────────
+*.mm
+**/checkpoint/
+**/ckpt-*.data-*
+**/ckpt-*.index
+**/seed*/ckpt-*
+
+# Per-query result parquets are large; keep scores.json + RESULTS.md instead
+data/results/**/query_results*.parquet
+data/results/**/ref_segment_lookup.parquet
+data/results/**/nmfp_ref_segment_lookup.parquet
+
+# Intervention 2 centroids (regenerable from training)
+data/results/nafp/intervention2/centroids/
+
+# ────────────────────────────────────────────────────────────────────────
+# Build / staging / logs / one-off bundles
+# ────────────────────────────────────────────────────────────────────────
+hf_dataset/data/
+hf_dataset/staging/
+logs/
+nafp_patched_*.tar.gz
+*.log
+
+# Kaggle / Colab kernel metadata (regenerable)
+scripts/nafp/kernel-metadata.json
+
+# External cloned repos (large; clone separately if needed)
+external/
+
+# Duplicate copies of upstream NAFP code (we only ship scripts/nafp/upstream/)
+upstream/
+data/results/nafp/kaggle_output/neural-audio-fp/
+
+# Auxiliary smaller "tar.gz" wheels-bundle for NAFP training (rebuild via scripts)
+data/results/nafp/kaggle_output/logs/
