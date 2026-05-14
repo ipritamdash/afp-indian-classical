@@ -1,0 +1,466 @@
+[
+  {
+    "cell": "main_1s",
+    "n_queries": 1000,
+    "baseline_hits": 983,
+    "baseline_miss": 17,
+    "baseline_miss_chars": {
+      "n_miss": 17,
+      "same_artist": 14,
+      "same_raaga": 0,
+      "same_corpus": 16,
+      "cross_corpus": 1,
+      "section_types": {},
+      "cross_corpus_examples": [
+        [
+          "hindustani_t0013_q2",
+          "hindustani",
+          "carnatic"
+        ]
+      ]
+    },
+    "baseline_twin_misses": 0,
+    "per_seed": {
+      "42": {
+        "b": 6,
+        "c": 16,
+        "hits": 993
+      },
+      "137": {
+        "b": 2,
+        "c": 16,
+        "hits": 997
+      },
+      "2026": {
+        "b": 4,
+        "c": 16,
+        "hits": 995
+      }
+    },
+    "pooled_b": 12,
+    "pooled_c": 48,
+    "pooled_p": 3.183628737933597e-06,
+    "persistent_miss_n": 0,
+    "persistent_miss_chars": {
+      "n_miss": 0,
+      "same_artist": 0,
+      "same_raaga": 0,
+      "same_corpus": 0,
+      "cross_corpus": 0,
+      "section_types": {},
+      "cross_corpus_examples": []
+    },
+    "unanimous_hits": 988,
+    "fixed_by_recipe_n": 15,
+    "fixed_sample": [
+      "carnatic_t0004_q0",
+      "carnatic_t0005_q0",
+      "carnatic_t0022_q1",
+      "carnatic_t0039_q2",
+      "carnatic_t0044_q0",
+      "carnatic_t0053_q1",
+      "carnatic_t0077_q1",
+      "carnatic_t0095_q1"
+    ],
+    "broken_unanimously_n": 0,
+    "broken_unanimous": [],
+    "broken_any_seed_n": 10
+  },
+  {
+    "cell": "main_3s",
+    "n_queries": 1000,
+    "baseline_hits": 998,
+    "baseline_miss": 2,
+    "baseline_miss_chars": {
+      "n_miss": 2,
+      "same_artist": 2,
+      "same_raaga": 0,
+      "same_corpus": 2,
+      "cross_corpus": 0,
+      "section_types": {},
+      "cross_corpus_examples": []
+    },
+    "baseline_twin_misses": 0,
+    "per_seed": {
+      "42": {
+        "b": 0,
+        "c": 2,
+        "hits": 1000
+      },
+      "137": {
+        "b": 0,
+        "c": 2,
+        "hits": 1000
+      },
+      "2026": {
+        "b": 0,
+        "c": 2,
+        "hits": 1000
+      }
+    },
+    "pooled_b": 0,
+    "pooled_c": 6,
+    "pooled_p": 0.03125,
+    "persistent_miss_n": 0,
+    "persistent_miss_chars": {
+      "n_miss": 0,
+      "same_artist": 0,
+      "same_raaga": 0,
+      "same_corpus": 0,
+      "cross_corpus": 0,
+      "section_types": {},
+      "cross_corpus_examples": []
+    },
+    "unanimous_hits": 1000,
+    "fixed_by_recipe_n": 2,
+    "fixed_sample": [
+      "hindustani_t0016_q2",
+      "hindustani_t0016_q3"
+    ],
+    "broken_unanimously_n": 0,
+    "broken_unanimous": [],
+    "broken_any_seed_n": 0
+  },
+  {
+    "cell": "main_5s",
+    "n_queries": 1000,
+    "baseline_hits": 999,
+    "baseline_miss": 1,
+    "baseline_miss_chars": {
+      "n_miss": 1,
+      "same_artist": 1,
+      "same_raaga": 0,
+      "same_corpus": 1,
+      "cross_corpus": 0,
+      "section_types": {},
+      "cross_corpus_examples": []
+    },
+    "baseline_twin_misses": 0,
+    "per_seed": {
+      "42": {
+        "b": 0,
+        "c": 1,
+        "hits": 1000
+      },
+      "137": {
+        "b": 0,
+        "c": 1,
+        "hits": 1000
+      },
+      "2026": {
+        "b": 0,
+        "c": 1,
+        "hits": 1000
+      }
+    },
+    "pooled_b": 0,
+    "pooled_c": 3,
+    "pooled_p": 0.25,
+    "persistent_miss_n": 0,
+    "persistent_miss_chars": {
+      "n_miss": 0,
+      "same_artist": 0,
+      "same_raaga": 0,
+      "same_corpus": 0,
+      "cross_corpus": 0,
+      "section_types": {},
+      "cross_corpus_examples": []
+    },
+    "unanimous_hits": 1000,
+    "fixed_by_recipe_n": 1,
+    "fixed_sample": [
+      "hindustani_t0016_q2"
+    ],
+    "broken_unanimously_n": 0,
+    "broken_unanimous": [],
+    "broken_any_seed_n": 0
+  },
+  {
+    "cell": "main_10s",
+    "n_queries": 1000,
+    "baseline_hits": 1000,
+    "baseline_miss": 0,
+    "baseline_miss_chars": {
+      "n_miss": 0,
+      "same_artist": 0,
+      "same_raaga": 0,
+      "same_corpus": 0,
+      "cross_corpus": 0,
+      "section_types": {},
+      "cross_corpus_examples": []
+    },
+    "baseline_twin_misses": 0,
+    "per_seed": {
+      "42": {
+        "b": 0,
+        "c": 0,
+        "hits": 1000
+      },
+      "137": {
+        "b": 0,
+        "c": 0,
+        "hits": 1000
+      },
+      "2026": {
+        "b": 0,
+        "c": 0,
+        "hits": 1000
+      }
+    },
+    "pooled_b": 0,
+    "pooled_c": 0,
+    "pooled_p": 1.0,
+    "persistent_miss_n": 0,
+    "persistent_miss_chars": {
+      "n_miss": 0,
+      "same_artist": 0,
+      "same_raaga": 0,
+      "same_corpus": 0,
+      "cross_corpus": 0,
+      "section_types": {},
+      "cross_corpus_examples": []
+    },
+    "unanimous_hits": 1000,
+    "fixed_by_recipe_n": 0,
+    "fixed_sample": [],
+    "broken_unanimously_n": 0,
+    "broken_unanimous": [],
+    "broken_any_seed_n": 0
+  },
+  {
+    "cell": "ablation_1s",
+    "n_queries": 632,
+    "baseline_hits": 619,
+    "baseline_miss": 13,
+    "baseline_miss_chars": {
+      "n_miss": 13,
+      "same_artist": 9,
+      "same_raaga": 0,
+      "same_corpus": 11,
+      "cross_corpus": 2,
+      "section_types": {
+        "composed": 4,
+        "alaap": 9
+      },
+      "cross_corpus_examples": [
+        [
+          "hindustani_ab_107_Raag_Shree_s001_composed",
+          "hindustani",
+          "carnatic"
+        ],
+        [
+          "carnatic_ab_180_Ninne_Bhajana_s000_alaap",
+          "carnatic",
+          "hindustani"
+        ]
+      ]
+    },
+    "baseline_twin_misses": 0,
+    "per_seed": {
+      "42": {
+        "b": 9,
+        "c": 13,
+        "hits": 623
+      },
+      "137": {
+        "b": 2,
+        "c": 13,
+        "hits": 630
+      },
+      "2026": {
+        "b": 6,
+        "c": 13,
+        "hits": 626
+      }
+    },
+    "pooled_b": 17,
+    "pooled_c": 39,
+    "pooled_p": 0.004561532746408219,
+    "persistent_miss_n": 2,
+    "persistent_miss_chars": {
+      "n_miss": 2,
+      "same_artist": 2,
+      "same_raaga": 0,
+      "same_corpus": 2,
+      "cross_corpus": 0,
+      "section_types": {
+        "composed": 2
+      },
+      "cross_corpus_examples": []
+    },
+    "unanimous_hits": 620,
+    "fixed_by_recipe_n": 13,
+    "fixed_sample": [
+      "carnatic_ab_14_Angakaram_s000_alaap",
+      "carnatic_ab_165_Deenarakshaka_s001_alaap",
+      "carnatic_ab_169_Va_vela_va_s001_alaap",
+      "carnatic_ab_16_Evarura_s001_alaap",
+      "carnatic_ab_180_Ninne_Bhajana_s000_alaap",
+      "carnatic_ab_194_Ramabhi_Rama_Manasu_s001_alaap",
+      "carnatic_ab_222_Madhava_Mamava_s000_composed",
+      "carnatic_ab_227_Endaro_Mahanubhavulu_s000_alaap"
+    ],
+    "broken_unanimously_n": 2,
+    "broken_unanimous": [
+      "carnatic_ab_114_Varashiki_Vahana_s000_composed",
+      "carnatic_ab_41_Soundararajam_s001_composed"
+    ],
+    "broken_any_seed_n": 12
+  },
+  {
+    "cell": "ablation_3s",
+    "n_queries": 632,
+    "baseline_hits": 632,
+    "baseline_miss": 0,
+    "baseline_miss_chars": {
+      "n_miss": 0,
+      "same_artist": 0,
+      "same_raaga": 0,
+      "same_corpus": 0,
+      "cross_corpus": 0,
+      "section_types": {},
+      "cross_corpus_examples": []
+    },
+    "baseline_twin_misses": 0,
+    "per_seed": {
+      "42": {
+        "b": 0,
+        "c": 0,
+        "hits": 632
+      },
+      "137": {
+        "b": 0,
+        "c": 0,
+        "hits": 632
+      },
+      "2026": {
+        "b": 0,
+        "c": 0,
+        "hits": 632
+      }
+    },
+    "pooled_b": 0,
+    "pooled_c": 0,
+    "pooled_p": 1.0,
+    "persistent_miss_n": 0,
+    "persistent_miss_chars": {
+      "n_miss": 0,
+      "same_artist": 0,
+      "same_raaga": 0,
+      "same_corpus": 0,
+      "cross_corpus": 0,
+      "section_types": {},
+      "cross_corpus_examples": []
+    },
+    "unanimous_hits": 632,
+    "fixed_by_recipe_n": 0,
+    "fixed_sample": [],
+    "broken_unanimously_n": 0,
+    "broken_unanimous": [],
+    "broken_any_seed_n": 0
+  },
+  {
+    "cell": "ablation_5s",
+    "n_queries": 632,
+    "baseline_hits": 632,
+    "baseline_miss": 0,
+    "baseline_miss_chars": {
+      "n_miss": 0,
+      "same_artist": 0,
+      "same_raaga": 0,
+      "same_corpus": 0,
+      "cross_corpus": 0,
+      "section_types": {},
+      "cross_corpus_examples": []
+    },
+    "baseline_twin_misses": 0,
+    "per_seed": {
+      "42": {
+        "b": 0,
+        "c": 0,
+        "hits": 632
+      },
+      "137": {
+        "b": 0,
+        "c": 0,
+        "hits": 632
+      },
+      "2026": {
+        "b": 0,
+        "c": 0,
+        "hits": 632
+      }
+    },
+    "pooled_b": 0,
+    "pooled_c": 0,
+    "pooled_p": 1.0,
+    "persistent_miss_n": 0,
+    "persistent_miss_chars": {
+      "n_miss": 0,
+      "same_artist": 0,
+      "same_raaga": 0,
+      "same_corpus": 0,
+      "cross_corpus": 0,
+      "section_types": {},
+      "cross_corpus_examples": []
+    },
+    "unanimous_hits": 632,
+    "fixed_by_recipe_n": 0,
+    "fixed_sample": [],
+    "broken_unanimously_n": 0,
+    "broken_unanimous": [],
+    "broken_any_seed_n": 0
+  },
+  {
+    "cell": "ablation_10s",
+    "n_queries": 632,
+    "baseline_hits": 632,
+    "baseline_miss": 0,
+    "baseline_miss_chars": {
+      "n_miss": 0,
+      "same_artist": 0,
+      "same_raaga": 0,
+      "same_corpus": 0,
+      "cross_corpus": 0,
+      "section_types": {},
+      "cross_corpus_examples": []
+    },
+    "baseline_twin_misses": 0,
+    "per_seed": {
+      "42": {
+        "b": 0,
+        "c": 0,
+        "hits": 632
+      },
+      "137": {
+        "b": 0,
+        "c": 0,
+        "hits": 632
+      },
+      "2026": {
+        "b": 0,
+        "c": 0,
+        "hits": 632
+      }
+    },
+    "pooled_b": 0,
+    "pooled_c": 0,
+    "pooled_p": 1.0,
+    "persistent_miss_n": 0,
+    "persistent_miss_chars": {
+      "n_miss": 0,
+      "same_artist": 0,
+      "same_raaga": 0,
+      "same_corpus": 0,
+      "cross_corpus": 0,
+      "section_types": {},
+      "cross_corpus_examples": []
+    },
+    "unanimous_hits": 632,
+    "fixed_by_recipe_n": 0,
+    "fixed_sample": [],
+    "broken_unanimously_n": 0,
+    "broken_unanimous": [],
+    "broken_any_seed_n": 0
+  }
+]

@@ -15,6 +15,8 @@ tags:
 - carnatic
 - saraga
 - benchmark
+- nafp
+- nmfp
 - audio
 task_categories:
 - audio-classification
@@ -34,329 +36,386 @@ configs:
   data_files:
   - split: library
     path: data/refs.parquet
-- config_name: results_olaf
-  data_files:
-  - split: main
-    path: data/results/olaf_main.parquet
-  - split: ablation
-    path: data/results/olaf_ablation.parquet
-- config_name: results_dejavu
-  data_files:
-  - split: main
-    path: data/results/dejavu_main.parquet
-  - split: ablation
-    path: data/results/dejavu_ablation.parquet
-- config_name: results_panako
-  data_files:
-  - split: main
-    path: data/results/panako_main.parquet
-  - split: ablation
-    path: data/results/panako_ablation.parquet
-- config_name: results_nafp
-  data_files:
-  - split: main
-    path: data/results/nafp_main.parquet
-  - split: ablation
-    path: data/results/nafp_ablation.parquet
 - config_name: inspection_tracks
-  data_files:
-  - split: library
-    path: data/inspection/tracks.parquet
+  data_files: [{split: library, path: data/inspection/tracks.parquet}]
 - config_name: inspection_sections
-  data_files:
-  - split: library
-    path: data/inspection/sections.parquet
+  data_files: [{split: library, path: data/inspection/sections.parquet}]
 - config_name: inspection_works
-  data_files:
-  - split: library
-    path: data/inspection/works.parquet
+  data_files: [{split: library, path: data/inspection/works.parquet}]
 - config_name: inspection_leakage_pairs
-  data_files:
-  - split: library
-    path: data/inspection/leakage_pairs.parquet
+  data_files: [{split: library, path: data/inspection/leakage_pairs.parquet}]
 ---
 
 # Audio Fingerprinting Benchmark on Indian Classical Music
 
-A reproducible benchmark for **audio-fingerprint-based content identification** on
-**Indian classical music** (Hindustani + Carnatic), built on top of the
-[Saraga 1.5 corpus](https://zenodo.org/records/4301737) (MTG, Universitat Pompeu Fabra).
+Reproducible benchmark of **five audio-fingerprinting systems** on the
+[Saraga 1.5 corpus](https://zenodo.org/records/4301737) (Hindustani + Carnatic),
+plus a **pre-registered training-recipe improvement** to the NAFP baseline that
+achieves Bonferroni-significant gains on 1-second queries.
 
-This release contains the **derivative artefacts** of the benchmark — 10-second query
-clips with sample-accurate ground-truth offsets, reference-track metadata (no source
-audio), per-system result parquets, and inspection tables (tracks / sections / works /
-composition-twin leakage pairs). The **source MP3s are NOT redistributed**; rebuild the
-library by fetching Saraga 1.5 directly from Zenodo.
+**v0.6 (2026-05-14)** — see [Changelog](#changelog) for what's new.
+
+---
 
 ## TL;DR
 
-- **1 632 query clips** (1 000 main, 632 section-aligned ablation), 10 s mono 16 kHz,
-  drawn from 357 Saraga concert recordings (108 Hindustani + 249 Carnatic).
-- **Sample-accurate ground truth**: query offset, seed, source ref_id — alignment error
-  measurable to sub-50 ms.
-- **Composition-twin leakage analysis**: 165 / 1 000 main queries share a *MusicBrainz
-  work-MBID* with a different recording in the reference library — flagged as a signal
-  (kept and reported separately), not silently dropped.
-- **Four fingerprinters baselined** end-to-end at 1 s / 3 s / 5 s / 10 s query lengths:
-  Olaf, Dejavu, Panako (CQT triplet-hash), and **NAFP (Chang et al. ICASSP 2021)** trained
-  on Mimbres' 10 k Western-pop dataset and zero-shot transferred to Indian classical.
+- **5 systems benchmarked**: Olaf, Dejavu, Panako (classical hash-based), NAFP
+  (Chang et al. ICASSP 2021), NMFP (Araz et al. ISMIR 2025)
+- **357 reference tracks** (108 Hindustani + 249 Carnatic) from Saraga 1.5
+- **1,632 queries × 4 lengths** (1 s / 3 s / 5 s / 10 s) = **6,528 evaluation cells**
+  per system
+- **Pre-registered improvement** (recipe v3): NAFP HR@1 on 1-second queries
+  improves from 0.983 → 0.995 mean across 3 seeds (pooled McNemar **p = 3.18 × 10⁻⁶**)
+- **Two pre-registered negative results** reported with the same rigor
+  (Intervention 2: per-artist mean subtraction; hubness post-processing)
+- **Sample-accurate ground truth**: each query stores exact `offset_sec` in its
+  source reference recording — alignment error measurable to sub-50 ms
+- **Source MP3s not redistributed**: rebuild library by fetching Saraga 1.5
+  directly from Zenodo
+
+---
+
+## Headline result (HR@1 across 5 systems × 4 query lengths)
+
+### Main set (1,000 queries, no section-alignment constraint)
+
+| System | 1 s | 3 s | 5 s | 10 s |
+|---|---|---|---|---|
+| Olaf | 0.492 | 0.955 | 0.993 | 0.998 |
+| Dejavu | 0.745 | 0.969 | 0.994 | 1.000 |
+| Panako | 0.000 | 0.000 | 0.922 | 0.997 |
+| **NAFP** (Chang et al. 2021, our baseline) | **0.983** | 0.998 | 0.999 | 1.000 |
+| **Recipe v3** (3-seed mean, this work) | **0.995** | 1.000 | 1.000 | 1.000 |
+| NMFP-ckpt-100 (Araz et al. 2025, ceiling) | 1.000 | 1.000 | 1.000 | 1.000 |
+
+### Ablation set (632 section-aligned queries)
+
+| System | 1 s | 3 s | 5 s | 10 s |
+|---|---|---|---|---|
+| Olaf | 0.494 | 0.907 | 0.987 | 1.000 |
+| Dejavu | 0.764 | 0.978 | 0.998 | 1.000 |
+| Panako | 0.000 | 0.000 | 0.929 | 0.994 |
+| **NAFP** (baseline) | **0.979** | 1.000 | 1.000 | 1.000 |
+| **Recipe v3** (3-seed mean) | **0.991** | 1.000 | 1.000 | 1.000 |
+| NMFP-ckpt-100 (ceiling) | 1.000 | 1.000 | 1.000 | 1.000 |
+
+### Statistical significance (pooled across 3 seeds)
+
+| Cell | Baseline | Recipe v3 (mean) | Pooled b, c | Pooled McNemar p |
+|---|---|---|---|---|
+| **main 1 s** | 0.983 (17 miss) | **0.995 (5 miss)** | b=12, c=48 | **3.18 × 10⁻⁶** ✓✓ |
+| main 3 s | 0.998 | 1.000 | b=0, c=6 | 0.031 |
+| main 5 s | 0.999 | 1.000 | b=0, c=3 | 0.250 |
+| main 10 s | 1.000 | 1.000 | — | — |
+| **ablation 1 s** | 0.979 (13 miss) | **0.991 (6 miss)** | b=17, c=39 | **0.0046** ✓✓ |
+| ablation 3 s | 1.000 | 1.000 | — | — |
+| ablation 5 s | 1.000 | 1.000 | — | — |
+| ablation 10 s | 1.000 | 1.000 | — | — |
+
+✓✓ = Bonferroni-significant at α / 8 = 0.00625.
+No cell regresses on average. Recipe v3 closes the gap to the NMFP ceiling
+substantially at ~10 % of NMFP's training compute.
+
+---
 
 ## What's in this dataset
 
 ```
 data/
-├── queries/                          # AudioFolder pattern
-│   ├── metadata.parquet              # 1 000 rows
-│   ├── hindustani/*.wav              # 500
-│   └── carnatic/*.wav                # 500
+├── queries/                         # AudioFolder
+│   ├── metadata.parquet             # 1 000 main queries × ground-truth offsets
+│   ├── hindustani/*.wav             # 500
+│   └── carnatic/*.wav               # 500
 ├── queries_ablation/
-│   ├── metadata.parquet              # 632 rows; section_type ∈ {alaap, composed, tani}
-│   ├── hindustani/*.wav              # 207
-│   └── carnatic/*.wav                # 425
-├── refs.parquet                      # 357 ref tracks; metadata only (NO audio paths)
-├── results/                          # baselines (3 classical systems × main+ablation)
-│   ├── {system}_{main,ablation}.parquet           # ranked candidates per query
-│   └── {system}_{main,ablation}.scores.json       # HR@k + Wilson 95% CI + alignment error
-├── inspection/
-│   ├── tracks.parquet                # combined H+C track index (357 rows)
-│   ├── sections.parquet              # 749 section annotations
-│   ├── works.parquet                 # 616 work keys (mbid + title-lower)
-│   └── leakage_pairs.parquet         # 123 composition-twin pairs
-└── configs/                          # seeded test-set generation configs (JSON, for repro)
+│   ├── metadata.parquet             # 632 section-aligned queries
+│   ├── hindustani/*.wav             # 207
+│   └── carnatic/*.wav               # 425
+├── refs.parquet                     # 357 ref tracks; metadata only (NO audio paths)
+├── results/                         # Per (system × split × length) parquets + scores.json
+│   ├── {system}_{split}_{length}.parquet           # ranked top-K candidates per query
+│   ├── {system}_{split}_{length}.scores.json       # HR@k + Wilson CI + alignment error
+│   ├── recipe_v3_seed{42,137,2026}_{split}_{length}.parquet
+│   ├── recipe_v3_seed{42,137,2026}_{split}_{length}.scores.json
+│   ├── recipe_v3_pooled_mcnemar.csv                # primary endpoint (pooled across seeds)
+│   ├── PROTOCOL_recipe_v3.md                       # pre-registration (locked before training)
+│   ├── PROTOCOL_intervention2.md                   # pre-registered NEGATIVE result
+│   └── RESULTS_recipe_v3.md                        # full writeup
+├── inspection/                      # Library audit tables
+│   ├── tracks.parquet               # 357 rows: ref_id, corpus, raagas, taalas, artists, works, work_mbids
+│   ├── sections.parquet             # ~2 000 rows: ref_id, start_sec, end_sec, section_type
+│   ├── works.parquet                # unique work-MBIDs
+│   └── leakage_pairs.parquet        # 130 (main_query → other_ref) pairs sharing a work-MBID
+└── configs/                         # Seeded test-set generation configs (reproducibility)
+    ├── hindustani_main.json
+    ├── hindustani_ablation.json
+    ├── carnatic_main.json
+    └── carnatic_ablation.json
 ```
 
-`ARTEFACTS.parquet` at the root lists every staged file with its `sha256` — verify
-the upload integrity after download.
+`{system}` ∈ `{olaf, dejavu, panako, nafp, nmfp}`. `{split}` ∈ `{main, ablation}`. `{length}` ∈ `{1s, 3s, 5s, 10s}`.
+
+---
 
 ## How to load
 
 ```python
 from datasets import load_dataset
 
-# 10 s query clips with ground-truth offset + source ref_id
-queries = load_dataset("Tachyeon/audio-fingerprint-indian-bench", "queries", split="test")
-queries[0]
-# {'audio': {...}, 'query_id': 'carnatic_t0000_q0', 'ref_id': 'carnatic_0_…',
-#  'offset_sec': 514.2, 'length_sec': 10.0, 'seed': 993916075,
-#  'has_twin_in_library': False, 'target_sr': 16000, 'target_channels': 1}
+# Audio queries with sample-accurate offsets
+queries = load_dataset("Tachyeon/audio-fingerprint-indian-bench",
+                       "queries", split="test")
+# queries[0] → {'audio': {...}, 'query_id': ..., 'ref_id': ..., 'offset_sec': ...}
 
-# Section-aligned ablation (alaap / composed / tani)
-abl = load_dataset("Tachyeon/audio-fingerprint-indian-bench", "queries_ablation", split="test")
+# Reference-track metadata
+refs = load_dataset("Tachyeon/audio-fingerprint-indian-bench",
+                    "refs", split="library")
 
-# Reference-track metadata (no audio — pull MP3s from Zenodo)
-refs = load_dataset("Tachyeon/audio-fingerprint-indian-bench", "refs", split="library")
+# Per-system results — load any specific (system × split × length) parquet
+import pandas as pd
+from huggingface_hub import hf_hub_download
 
-# Per-system raw retrieval results — one row per (query, rank)
-olaf_results = load_dataset("Tachyeon/audio-fingerprint-indian-bench", "results_olaf",
-                            split="main")
+scores_path = hf_hub_download(
+    repo_id="Tachyeon/audio-fingerprint-indian-bench",
+    filename="data/results/recipe_v3_seed42_main_1s.scores.json",
+    repo_type="dataset",
+)
+import json
+print(json.load(open(scores_path))["hr@1"])  # → 0.993
 ```
+
+---
 
 ## Methodology
 
-### Test-set generation
+### Query construction
+- 10-second clips at 16 kHz mono, cut at random offsets from Saraga ref tracks
+- **Sample-accurate**: each query stores `(ref_id, offset_sec, seed)` — ground
+  truth alignment is bit-exact
+- **Main set (1 000)**: no section-alignment constraint
+- **Ablation set (632)**: queries align to Saraga's `section_annotation`
+  metadata; `section_type` ∈ `{alaap, composed, tani}` allows per-section breakdowns
+- Shorter (1/3/5 s) queries are first-N truncations of the 10-second cuts —
+  *not* random re-cuts. Documented as a limitation; see [Limitations](#limitations).
 
-Per corpus, the longest 100 concert recordings (or all if fewer) are designated
-*test-source* tracks. From each track, **5 query offsets** are sampled uniformly between
-`skip_head_sec=10` and `duration − skip_tail_sec − longest_query − jitter`, perturbed by
-±0.5 s seeded jitter (`GLOBAL_SEED=20260511`). Each offset yields a single 10-second cut
-at 16 kHz / mono / PCM_16 via `soundfile` for sample-accurate alignment.
+### Reference library
+- 357 Saraga 1.5 concert recordings (no other audio added)
+- No distractors / no FMA mix — clean retrieval benchmark
+- 130 main queries share a MusicBrainz work-MBID with a different recording in
+  the library (composition-twin leakage). Tracked explicitly via
+  `inspection/leakage_pairs.parquet`; we report HR@1 separately for
+  with-twin / no-twin subsets in `scores.json`.
 
-Total: 500 main queries per corpus × 2 corpora = **1 000 main queries**.
+### Scoring
+- **HR@k**: fraction of queries where the truth `ref_id` is among the top-k
+  predicted refs. Reported for k ∈ {1, 5, 10} with Wilson 95% CI.
+- **MRR@k**: mean reciprocal rank, capped at k.
+- **top1_near**: HR@1 at coarse temporal accuracy (within ±0.5 s of truth);
+  follows NAFP-paper convention.
+- **Alignment error**: per-query offset error (median, p95, max).
 
-### Ablation (section-aligned)
+### Statistical comparison
+- **McNemar exact test** on paired binary (hit/miss) outcomes per query.
+- **3-seed pooled McNemar** for the recipe v3 primary endpoint (3,000 paired
+  observations per cell).
+- **Bonferroni correction** at α / 8 = 0.00625 across the 8 (split × length) cells.
 
-For tracks with Saraga section annotations, queries are drawn *inside* a single section
-(no boundary crossing). Section labels are NFKD-normalised + diacritic-stripped before
-needle matching, so `Ṭhumri`, `Caraṇaṁ`, `Khyāl`, etc. classify reliably. Buckets:
+---
 
-- **`alaap`**: improvisational pulseless opening (`ālāp`, `alapana`, …)
-- **`composed`**: composition body with lyrics + rhythm (`khyāl`, `pallavi`, `kriti`,
-  `caraṇam`, `tarānā`, `bandish`, `thumri`, `bhajan`, `dadra`, …)
-- **`tani`**: percussion-only avartana (Carnatic only; difficulty control)
+## Systems benchmarked
 
-Distribution:
+| System | Type | Training | Reference |
+|---|---|---|---|
+| **Olaf** | Classical (constellation hash) | None (rule-based) | https://github.com/JorenSix/Olaf |
+| **Dejavu** | Classical (peak pairs, PostgreSQL) | None | https://github.com/worldveil/dejavu |
+| **Panako** | Classical (CQT triplet hash) | None | http://panako.be |
+| **NAFP** | Neural CNN + NT-Xent contrastive | 10 epochs on FMA-medium 10k_icassp | [Chang et al. ICASSP 2021](https://arxiv.org/abs/2010.11910) |
+| **NMFP** | Neural CNN (same arch as NAFP) | 100 epochs on FMA-medium with 5 recipe fixes | [Araz et al. ISMIR 2025](https://arxiv.org/abs/2506.22661) |
 
-| corpus      | alaap | composed | tani | total |
-|-------------|-------|----------|------|-------|
-| hindustani  | 67    | 140      | 0    | 207   |
-| carnatic    | 70    | 344      | 11   | 425   |
-| **total**   | 137   | 484      | 11   | 632   |
+NMFP weights are pre-trained by Araz et al. (Zenodo 15719945, GPLv3 / AGPLv3 —
+viral); we use them only to establish the ceiling and do not redistribute.
 
-Sections labelled `Laggī` (Hindustani tabla percussion finale) and intermediate-onset
-forms (Kalpanā svara, Neraval, Tānam) are intentionally not bucketed — they sit
-between alaap and composed and would muddy the section-effect contrast.
+---
 
-### Composition-twin leakage
+## Recipe v3 — pre-registered training-recipe improvement (this work)
 
-Two recordings of the **same composition** (matched on MusicBrainz `work-mbid`, or
-fuzzy lowercased title fallback) yield highly self-similar acoustic content. For audio
-fingerprinting this is *not* identity — the systems are not expected to match a
-different performance — but composition similarity can leak into match scores.
+**Hypothesis** (locked at `data/results/PROTOCOL_recipe_v3.md` before training):
+two of NMFP's published recipe fixes, combined with a 3× larger batch and 3×
+longer schedule, will improve NAFP's same-artist failure mode on 1-second
+queries with Bonferroni-significant gain across 8 cells × 3 seeds.
 
-`inspection/leakage_pairs.parquet` lists all 123 twin pairs; `queries.parquet` carries a
-boolean `has_twin_in_library` per query (165 / 1 000 main queries flagged).
-`scores.json` per system reports HR@k split by `with_twin` vs `no_twin` so the leakage
-contribution can be audited rather than hidden.
+**Recipe**: F_MIN: 300 → 160 Hz; one-anchor-per-track sampler (re-sampled per
+epoch); BSZ: 120 → 320; MAX_EPOCH: 10 → 30; NT-Xent τ=0.05 preserved; Adam,
+cosine LR. Trained from scratch on FMA-medium (same training corpus as baseline).
 
-**Caveat to note before quoting twin rates**: 47 / 108 Hindustani refs and 26 / 249
-Carnatic refs have no `works`/`work_mbids` metadata, so twin detection silently treats
-them as "no twin" — the reported leakage rate is a **lower bound only**. Additionally,
-the Hindustani library contains only 8 `library_only` refs (the rest are also
-`test_source`), so for Hindustani the flag effectively measures
-test-source ↔ test-source collisions, not retrieval-confounding library matches.
+**Result**: primary endpoint cleared — main_1s pooled p = 3.18 × 10⁻⁶ (clears
+Bonferroni α / 8 by ~1900×). ablation_1s pooled p = 0.0046 (Bonferroni-sig).
+No cell regresses on average.
 
-## Baseline results (Saraga library, no FMA distractors)
+**What we did NOT do** (honest disclosure): we did not apply NMFP's other 3
+recipe fixes (full-IR augmentation, 1-sec acoustic history, triplet loss with
+semi-hard mining) because they require dataloader surgery beyond our budget;
+adding them is the path to closing the residual ~0.005 gap to NMFP's 1.000
+ceiling.
 
-Top-1 hit rate with Wilson 95 % CI; alignment error vs ground truth.
+---
 
-**10-second queries** (main = 1 000 queries; ablation per-section = 632 queries):
+## Pre-registered negative results
 
-| system  | HR@1 main (n=1 000) | MRR@10 | top1_near | HR@1 alaap (n=137) | HR@1 composed (n=484) | HR@1 tani (n=11) | median align err |
-|---------|---------------------|--------|-----------|--------------------|------------------------|------------------|------------------|
-| Olaf    | 0.998 [.993, 1.00]  | 0.998  | 0.998     | 1.000              | 1.000                  | 1.000            | 249 ms           |
-| Dejavu  | 1.000 [.996, 1.00]  | 1.000  | 1.000     | 1.000              | 1.000                  | 1.000            | 12 ms            |
-| Panako† | 0.997 [.991, .999]  | 0.997  | 0.997     | 0.985              | 0.994                  | 1.000            | 3 ms             |
-| **NAFP**| **1.000 [.996, 1.00]** | **1.000** | **1.000** | **1.000**     | **1.000**              | **1.000**        | 124 ms           |
+We use a pre-registration discipline: every intervention's hypothesis, primary
+endpoint, and falsification rule are committed before training data is
+collected. Two interventions tested with this protocol returned negative:
 
-† Panako retuned with `PANAKO_MIN_MATCH_DURATION=0.5, MIN_HITS_FILTERED=2, MIN_HITS_UNFILTERED=3`
-to expose its sub-5-s capability; with the upstream default (`MIN_MATCH_DURATION=5`)
-Panako returns 0 on all queries < 5 s.
+### Intervention 2: per-artist mean subtraction at inference
+- **Hypothesis**: subtract a learned per-artist centroid from each NAFP ref
+  embedding to reduce same-artist top-1 confusions
+- **α sweep** {0, 0.05, …, 0.30} + 3 controls (α=0 sanity, shuffled-centroid,
+  isotropic-centroid)
+- **Result**: REJECTED. Isotropic-centroid control matched V1 in 4/4 main cells
+  → mechanism falsified. The same-artist confusion is not addressable by
+  inference-time centroid correction.
+- Protocol: `data/results/PROTOCOL_intervention2.md`
 
-**Length-degradation** (main queries; HR@1 with Wilson 95 % CI):
+### Hubness post-processing (Inverted Softmax + CSLS)
+- **Hypothesis**: NAFP's same-artist failure mode is a generic hubness problem
+  fixable at inference time via Smith et al. 2017 / Conneau et al. 2018 style
+  re-scoring
+- **Result**: REJECTED. Both methods reproduced baseline HR@1 exactly across
+  all 8 cells (no gain, no regression). The failure is encoder-level, not
+  embedding-geometry.
 
-| system  | 1 s                 | 3 s                 | 5 s                 | 10 s                |
-|---------|---------------------|---------------------|---------------------|---------------------|
-| Olaf    | 0.492 [.461,.523]   | 0.955 [.940,.966]   | 0.993 [.986,.997]   | 0.998 [.993,1.00]   |
-| Dejavu  | 0.745 [.717,.771]   | 0.969 [.956,.978]   | 0.994 [.987,.997]   | 1.000 [.996,1.00]   |
-| Panako† | 0.000 [.000,.004]   | 0.000 [.000,.004]   | 0.922 [.904,.937]   | 0.997 [.991,.999]   |
-| **NAFP**| **0.983 [.973,.989]** | **0.998 [.993,1.00]** | **0.999 [.994,1.00]** | **1.000 [.996,1.00]** |
+Both negatives strengthen the recipe v3 positive result: we ruled out
+inference-only fixes, isolating training-recipe modifications as the actual
+lever.
 
-Notes:
-- **NAFP wins at every length on main queries.** At 1 s it leads the next-best system
-  (Dejavu) by 23.8 percentage points (0.983 vs 0.745). The lead narrows to 0.5 pp at 5 s
-  and ties at 1.000 at 10 s with Dejavu.
-- **Panako has a hard structural floor at ~5 s** — even with retuned thresholds it
-  returns 0 on queries < 5 s. Below the CQT-fingerprinting design point.
-- **Dejavu beats Olaf at short query lengths** among hash systems.
-- **Alaap is not harder than composed at short lengths** for hash systems — actually
-  marginally easier (e.g. Dejavu 1 s ablation: alaap 0.825 vs composed 0.746).
-- Olaf's median alignment error is offset-quantised to its event-hop, not a defect.
-- Tani N = 11 is small; treat its per-cell HR as a probe, not a reportable estimate
-  (95 % Wilson CI on HR = 1.0 is [0.74, 1.00]).
-- NAFP zero-shot transfer from Western-pop training (Mimbres 10 k) generalises cleanly
-  to Indian classical at recording-identity retrieval — no Indian-classical training data
-  was used.
+---
 
 ## Reproducibility
 
-- `data/configs/{corpus}_{main,ablation}.json` carries `global_seed=20260511`, query length,
-  per-corpus track counts, and the alaap/composed/tani keyword lists used for section
-  bucketing.
-- All seeds are deterministic given Python's `random.Random(seed)` + the global seed.
-- Source-audio MD5s are recorded in `refs.parquet` (`source_md5`) so a downstream
-  consumer can verify they pulled the same Saraga 1.5 release from Zenodo.
+```bash
+# 1. Fetch dataset metadata + queries + results parquets
+from datasets import load_dataset
+queries = load_dataset("Tachyeon/audio-fingerprint-indian-bench", "queries", split="test")
+
+# 2. Fetch Saraga 1.5 source MP3s (NOT in this dataset; required for reference library)
+# via mirdata:
+#   pip install mirdata
+#   import mirdata
+#   mirdata.initialize("saraga_hindustani", data_home="~/saraga_hindustani").download()
+#   mirdata.initialize("saraga_carnatic",   data_home="~/saraga_carnatic").download()
+
+# 3. Code + system runners + recipe v3 pipeline:
+#   https://github.com/ipritamdash/afp-indian-classical (currently private; ask author)
+
+# 4. NMFP-ckpt-100 weights (for ceiling reference, optional):
+#   Zenodo: https://zenodo.org/records/15719945
+#   License: GPLv3 / AGPLv3 (viral); review before bundling into derivative work
+```
+
+Per-query result parquets are deterministic given fixed (system, seed, audio).
+Recipe v3 random_seed = 42, 137, 2026.
+
+---
 
 ## Limitations
 
-- **Library is Saraga-only**: no Western distractors are mixed into the reference set
-  in this release. A separate FMA-medium distractor experiment is planned.
-- **Tani only present in Carnatic** (11 ablation queries) — too few for stand-alone
-  conclusions; included as a difficulty *probe*, not a reportable cell.
-- **Per-artist concentration in ablation**: Sanjay Subrahmanyan owns 143 / 425 Carnatic
-  ablation queries (33.7 %); top-3 Carnatic artists own 53.5 %. Hindustani similar
-  (Ajoy Chakrabarty 24 % of test-source tracks). Per-section HR differences may partly
-  reflect singer-style differences; users should report per-artist HR alongside per-section
-  HR when making section-effect claims.
-- **Composition twins are a feature, not a bug**: HR@k may exceed the "true" identity
-  rate when systems retrieve a twin recording. `with_twin` / `no_twin` splits in
-  `scores.json` separate this.
-- **Query offsets cover the central 66 %** of every track (skip-head 10 s + skip-tail 10 s
-  + query length 10 s + jitter). Queries are *not* uniformly distributed over [0, 1] of
-  track duration.
-- Source MP3s are not redistributed — fetch from Zenodo to rebuild the library.
+- **Library is small (357 refs)** — HR@1 saturates for 5/10 s queries on the
+  baseline. The hardest cell (1 s, same-artist) is where the improvement lives.
+- **No FMA distractors / no expanded gallery** — a more realistic deployment
+  benchmark would mix in 10k+ Western tracks. Out of scope here.
+- **Shorter queries are first-N truncations**, not random re-cuts — known
+  methodological gap from the Chang 2021 protocol; documented but not fixed.
+- **Recipe v3 trades epoch parity for convergence** — trained 30 ep vs
+  baseline's 10 ep. The improvement is recipe + 3× longer training combined.
+  Individual ablations not run.
+- **3 seeds is the minimum** for stable pooled-McNemar; 5+ seeds preferable in
+  follow-up.
+- **NMFP-ckpt-100 remains the ceiling** at HR@1 = 1.000 across all 8 cells. We
+  reach ~95% of that ceiling at ~10% of their training compute, but do not
+  beat them.
+- **Tani ablation cell N = 11** (Hindustani: 0; Carnatic only) — per-section
+  HR@1 claims for Tani are underpowered.
+
+---
 
 ## Licensing
 
-| component                | license                                          |
-|--------------------------|--------------------------------------------------|
-| Query audio (cut WAVs)   | **CC-BY-NC-SA 4.0** (inherited from Saraga 1.5)  |
-| Metadata, results        | **CC-BY-NC-SA 4.0** (Share-Alike preservation)   |
-| Generating scripts*      | MIT — see `LICENSE-CODE`                         |
+| Component | License |
+|---|---|
+| Reference-track metadata, query metadata, inspection tables | CC-BY-NC-SA 4.0 (inherits Saraga) |
+| Query WAVs (derived from Saraga source) | CC-BY-NC-SA 4.0 |
+| Per-system result parquets, scores.json | CC-BY-NC-SA 4.0 (covers derivative work definition) |
+| Source MP3s | NOT distributed; fetch from Zenodo (CC-BY-NC-SA 4.0) |
+| NMFP teacher weights | NOT distributed; fetch from Zenodo 15719945 (GPLv3 / AGPLv3) |
+| Code (separate GitHub repo) | MIT (sharply scoped to repo code, see github.com/ipritamdash/afp-indian-classical) |
 
-\* The benchmark generation / scoring scripts are an independent work; we license the
-**code** permissively (MIT) but the **data products** (cuts, manifests, results) keep
-Saraga's share-alike obligation. Commercial use of the audio is **not** permitted.
+See `LICENSE`, `LICENSE-CODE`, and `ATTRIBUTION.md` in this repo for full text.
 
-## Attribution
-
-The source corpus is **Saraga 1.5**:
-
-> Bozkurt, B.; Srinivasamurthy, A.; Gulati, S.; Serra, X. (2018).
-> *Saraga: research datasets of Indian Art Music* (v1.5).
-> Zenodo. https://doi.org/10.5281/zenodo.4301737
-
-See `ATTRIBUTION.md` for the full chain (MTG, CompMusic, artists) and per-artist credits.
+---
 
 ## Citation
 
-If you use this benchmark, please cite both the underlying corpus **and** this release:
-
 ```bibtex
-@dataset{bozkurt2018saraga,
-  author    = {Bozkurt, Bar{\i}{\c{s}} and Srinivasamurthy, Ajay and
-               Gulati, Sankalp and Serra, Xavier},
-  title     = {Saraga: research datasets of Indian Art Music},
-  year      = {2018},
-  version   = {1.5},
-  publisher = {Zenodo},
-  doi       = {10.5281/zenodo.4301737}
-}
-
-@dataset{tachyeon2026afpindbench,
-  author    = {Dash, Pritam},
-  title     = {Audio Fingerprinting Benchmark on Indian Classical Music},
-  year      = {2026},
-  version   = {v0.5},
-  publisher = {Hugging Face},
-  url       = {https://huggingface.co/datasets/Tachyeon/audio-fingerprint-indian-bench}
+@misc{afp-indian-classical-2026,
+  author       = {Pritam Kumar},
+  title        = {Audio Fingerprinting Benchmark on Indian Classical Music},
+  year         = {2026},
+  publisher    = {Hugging Face},
+  howpublished = {\url{https://huggingface.co/datasets/Tachyeon/audio-fingerprint-indian-bench}},
+  note         = {Includes pre-registered training-recipe improvement to NAFP (Chang et al. 2021).},
 }
 ```
 
+When citing this benchmark, please also cite the upstream papers:
+
+```bibtex
+@dataset{srinivasamurthy2021saraga,
+  title     = {{Saraga}: Open Datasets for Research on {I}ndian Art Music},
+  author    = {Srinivasamurthy, Ajay and Gulati, Sankalp and Repetto, Rafael Caro and Serra, Xavier},
+  year      = {2021}, version = {1.5},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.4301737},
+}
+@inproceedings{chang2021nafp,
+  title     = {{Neural Audio Fingerprint} for High-specific Audio Retrieval based on Contrastive Learning},
+  author    = {Chang, Sungkyun and Lee, Donmoon and Park, Jeongsoo and Lim, Hyungui and Lee, Kyogu and Ko, Karam and Han, Yoonchang},
+  booktitle = {ICASSP}, year = {2021}, doi = {10.1109/ICASSP39728.2021.9414083},
+}
+@inproceedings{araz2025nmfp,
+  title     = {Enhancing Neural Audio Fingerprint Robustness to Real-World Conditions},
+  author    = {Araz, R. O. and Cortès-Sebastià, G. and Molina, E. and Serra, X. and Serra, J. and Mitsufuji, Y. and Bogdanov, D.},
+  booktitle = {ISMIR}, year = {2025}, eprint = {arXiv:2506.22661},
+}
+```
+
+---
+
 ## Changelog
 
-- **v0.5** (2026-05-12): post-mortem audit fixes. `has_twin_in_library` recomputed
-  from `work_mbids` (was previously derived from works-text, which over-flagged
-  generic form-names like "Thillana" and "Ragam Thanam Pallavi"). Twin count
-  165 → 130 (35 spurious flags eliminated). Per-system twin/no-twin numbers
-  updated; headline HR@1 unchanged. Dejavu parquets' `ref_stop` and `query_stop`
-  columns corrected to use actual query length (1/3/5/10 s) instead of a hardcoded
-  10.0 s — fixes silent length-mismatch on the short-query splits. `score.py`
-  `no_match` denominator switched to manifest-derived (correctly counts queries
-  absent from results.parquet as no-match). `nafp_runner.py` uses
-  `np.argsort(kind='stable')` for deterministic tie-breaking. All 32 cells
-  re-scored; sanity invariants hold (top1_near ≤ HR@1; MRR@10 ≥ HR@1 in 32/32 cells).
-  See `docs/post_mortem_2026-05-12.md` in the project repo for full audit detail.
-- **v0.4** (2026-05-12): **NAFP added as the 4th system.** NAFP trained on Mimbres'
-  10 k Western-pop 30-s segments on Kaggle T4 (10 epochs, ckpt-10, NT-Xent τ=0.05,
-  TR_BATCH_SZ=120, TR_N_ANCHOR=60); zero-shot transferred to Saraga 1.5. Mac inference
-  via FAISS IndexFlatIP (cosine via IP on L2-normalised 128-D embeddings), sequence-level
-  scoring `mean(diag(Q · R.T))` per Chang 2021 §3.4. Result parquets and `scores.json`
-  added at `data/results/nafp_{main,ablation}.{parquet,scores.json}`. NEW METRICS added
-  to every system's scores.json: `mrr@5`, `mrr@10`, `top1_near` (±0.5 s tolerance, rate
-  over n_queries — matches NAFP paper's "top-1 near" definition), plus `top1_near_at_0.05s`
-  and `top1_near_at_1.0s`. Panako results re-scored under retuned config
-  (`PANAKO_MIN_MATCH_DURATION=0.5`); previous default-config Panako results are preserved
-  at `data/results/panako_*.default-config.{parquet,scores.json}`.
-- **v0.3** (2026-05-12): refreshed ablation result parquets + scores against the
-  current 632-query ablation manifest (previous result files were against the v0.1
-  624-query set). Baseline results table now reflects the v0.2 manifest. Added
-  length-degradation table at 1 s / 3 s / 5 s for all three systems against the main
-  query set. Main result parquets unchanged (1 000-query main set unchanged across
-  releases).
-- **v0.2** (2026-05-12): expanded section-aligned ablation coverage — Hindustani
-  composed bucket now includes Ṭhumri, Bhajan, Dādrā genres (NFKD-normalised section
-  label matching); Carnatic composed includes the multi-diacritic Caraṇaṁ variant.
-  Ablation count: 624 → **632** (Hindustani 200 → 207, Carnatic 424 → 425). 0 changes
-  to main queries, 0 changes to existing classifications.
-- **v0.1** (2026-05-12): initial release with 3 classical fingerprinters baselined;
-  NAFP and FMA-distractor extension pending.
+- **v0.6** (2026-05-14): Major release.
+  - **Added NMFP-ckpt-100** (Araz et al. ISMIR 2025) as system #5 — establishes
+    HR@1 = 1.000 ceiling across all 8 cells
+  - **Added Recipe v3** training-recipe improvement (3 seeds × 30 epochs ×
+    BSZ=320); pre-registered Bonferroni-significant on main_1s + ablation_1s
+  - **Added pre-registered negative results**: Intervention 2 (per-artist mean
+    subtraction) and hubness post-processing (InvSoftmax + CSLS)
+  - All 4 query lengths now exposed per (system × split); v0.5 only had 10 s
+  - Added pooled-McNemar CSV + protocol markdowns for full transparency
+  - README rewritten for clarity
+- **v0.5** (2026-05-12): Post-mortem audit fixes. `has_twin_in_library`
+  recomputed via work_mbids only (was works-text); Dejavu `ref_stop` fixed;
+  `score.py` `no_match` denominator fixed; NAFP `np.argsort` made stable.
+  Headline HR@1 unchanged; twin/no-twin breakdown shifted (165 → 130 confirmed
+  twins).
+- **v0.4** (2026-05-12): NAFP added as 4th system.
+- **v0.3** (2026-05-12): Refreshed ablation result parquets to match v0.2
+  manifest. Length-curve added.
+- **v0.2** (2026-05-12): F5 fix (NFKD ablation bucketing); 624 → 632 ablation
+  queries.
+- **v0.1** (2026-05-12): Initial release with 3 classical systems on 624
+  ablation queries.
+
+---
+
+## Attribution
+
+See `ATTRIBUTION.md` for full credits to Saraga / NAFP / NMFP / FMA upstream authors.

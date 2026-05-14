@@ -85,14 +85,25 @@ def main() -> int:
         repo_id=repo_id,
         repo_type="dataset",
         commit_message=(
-            "v0.1: 1624 query clips (1000 main + 624 ablation) + refs metadata + "
-            "3-system baseline results (Olaf, Dejavu, Panako) + inspection tables"
+            "v0.6: 5 systems × 4 lengths × main+ablation + recipe v3 (3 seeds, "
+            "Bonferroni-significant on 1s queries) + 2 pre-registered negative results"
         ),
         commit_description=(
-            "Sample-accurate audio-fingerprint test set on Saraga 1.5 Indian classical "
-            "music. 16 kHz mono PCM_16 WAVs, seed=20260511, jitter=±0.5s. "
-            "Composition-twin leakage flagged (165/1000). Audio CC-BY-NC-SA 4.0, "
-            "scripts MIT."
+            "MAJOR RELEASE.\n\n"
+            "New in v0.6:\n"
+            "- Added NMFP-ckpt-100 (Araz et al. ISMIR 2025) as system #5 — establishes "
+            "  HR@1=1.000 ceiling across all 8 cells\n"
+            "- Added Recipe v3 training-recipe improvement (3 seeds × 30 ep × BSZ=320):\n"
+            "  pre-registered Bonferroni-significant gain on main_1s (pooled p=3.18e-06) "
+            "  and ablation_1s (pooled p=0.0046), no cell regresses\n"
+            "- Added pre-registered negative results: Intervention 2 (per-artist mean "
+            "  subtraction) and hubness post-processing (InvSoftmax + CSLS)\n"
+            "- All 4 query lengths (1/3/5/10 s) now exposed per (system × split)\n"
+            "- 64 scores.json + 40+ result parquets + recipe_v3_pooled_mcnemar.csv + "
+            "  3 protocol/results markdowns for full transparency\n"
+            "- README rewritten\n\n"
+            "Saraga 1.5 audio NOT redistributed (CC-BY-NC-SA 4.0; fetch via Zenodo). "
+            "NMFP weights NOT redistributed (GPLv3/AGPLv3; fetch via Zenodo 15719945)."
         ),
         ignore_patterns=[".DS_Store", "*.tmp", "__pycache__"],
     )

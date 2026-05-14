@@ -140,36 +140,85 @@ def build_refs(staging: Path) -> int:
 # ── 4) results (per-system × main/ablation) ──────────────────────────────
 
 def build_results(staging: Path) -> None:
-    """For each baselined system, copy query_results.parquet + scores.json into
-    hf_dataset/data/results/{system}_{main,ablation}.{parquet,json}."""
-    systems = [
-        ("olaf",   "saraga_only_main",      "olaf_main"),
-        ("olaf",   "saraga_only_ablation",  "olaf_ablation"),
-        ("dejavu", "saraga_only_main",      "dejavu_main"),
-        ("dejavu", "saraga_only_ablation",  "dejavu_ablation"),
-        ("panako", "saraga_only_main",      "panako_main"),
-        ("panako", "saraga_only_ablation",  "panako_ablation"),
-        ("nafp",   "saraga_only_main",      "nafp_main"),
-        ("nafp",   "saraga_only_ablation",  "nafp_ablation"),
-    ]
-    for system, subdir, slug in systems:
+    """For each system × length × split combination, copy query_results.parquet +
+    scores.json into hf_dataset/data/results/{system}_{cell}.{parquet,json}.
+
+    v0.6 layout: <system>_<split>_<length>.{parquet,json} where:
+      system  ∈ {olaf, dejavu, panako, nafp, nmfp, recipe_v3}
+      split   ∈ {main, ablation}
+      length  ∈ {1s, 3s, 5s, 10s}
+
+    Adds compared to v0.5:
+    - All 4 query lengths exposed (was only 10s)
+    - NMFP-ckpt-100 (Araz et al. ISMIR 2025) reference ceiling
+    - Recipe v3 pooled-McNemar results (3-seed mean per cell)
+    """
+    # Tuples: (system_label, source_subdir_relative_to_data/results, slug)
+    # Classical 4 systems + NMFP, 4 lengths × main+ablation = 40 entries
+    classical_systems = ("olaf", "dejavu", "panako", "nafp")
+    length_to_subdir = {  # NAFP/baseline 10s case uses bare "saraga_only_main"/"saraga_only_ablation"
+        "1s":  ("saraga_only_main_1s",     "saraga_only_ablation_1s"),
+        "3s":  ("saraga_only_main_3s",     "saraga_only_ablation_3s"),
+        "5s":  ("saraga_only_main_5s",     "saraga_only_ablation_5s"),
+        "10s": ("saraga_only_main",        "saraga_only_ablation"),
+    }
+    entries = []
+    for system in classical_systems:
+        for length, (main_sub, abl_sub) in length_to_subdir.items():
+            entries.append((system, main_sub, f"{system}_main_{length}"))
+            entries.append((system, abl_sub,  f"{system}_ablation_{length}"))
+
+    # NMFP-ckpt-100 (Araz et al. 2025) results: nafp/nmfp_eval/saraga_{main,ablation}_<len>/
+    for length in ("1s", "3s", "5s", "10s"):
+        entries.append(("nafp/nmfp_eval", f"saraga_main_{length}",     f"nmfp_main_{length}"))
+        entries.append(("nafp/nmfp_eval", f"saraga_ablation_{length}", f"nmfp_ablation_{length}"))
+
+    # Recipe v3 — 3 seeds × 8 cells. We expose per-seed scores AND pooled-McNemar CSV.
+    for seed in (42, 137, 2026):
+        for split in ("main", "ablation"):
+            for length in ("1s", "3s", "5s", "10s"):
+                entries.append(
+                    (f"nafp/recipe_v3_30ep", f"seed{seed}_eval/{split}_{length}",
+                     f"recipe_v3_seed{seed}_{split}_{length}"),
+                )
+
+    n_written = 0
+    for system, subdir, slug in entries:
         src_dir = DATA / "results" / system / subdir
         if not src_dir.exists():
-            print(f"  [skip] {slug}: source dir missing — {src_dir}")
             continue
-        # query_results.parquet
-        src_pq = src_dir / "query_results.parquet"
-        dst_pq = staging / "data" / "results" / f"{slug}.parquet"
-        if src_pq.exists():
-            df = pd.read_parquet(src_pq)
-            write_parquet(df, dst_pq)
-        # scores.json
+        # scores.json (always)
         src_js = src_dir / "scores.json"
         if src_js.exists():
             dst_js = staging / "data" / "results" / f"{slug}.scores.json"
             dst_js.parent.mkdir(parents=True, exist_ok=True)
             dst_js.write_text(src_js.read_text())
-            print(f"wrote {dst_js.relative_to(PROJECT)}")
+            n_written += 1
+        # query_results.parquet (optional — these are large but useful for re-analysis)
+        src_pq = src_dir / "query_results.parquet"
+        dst_pq = staging / "data" / "results" / f"{slug}.parquet"
+        if src_pq.exists():
+            df = pd.read_parquet(src_pq)
+            write_parquet(df, dst_pq)
+    print(f"  [results] wrote {n_written} scores.json files across systems × cells")
+
+    # Recipe v3 pooled-McNemar summary (the headline statistical test)
+    src_pool = DATA / "results" / "nafp" / "recipe_v3_30ep" / "pooled_mcnemar.csv"
+    if src_pool.exists():
+        dst = staging / "data" / "results" / "recipe_v3_pooled_mcnemar.csv"
+        shutil.copy(src_pool, dst)
+        print(f"  [results] pooled-McNemar table → {dst.name}")
+
+    # Pre-registered protocols (markdown text, small)
+    protocols = {
+        "PROTOCOL_recipe_v3":   DATA / "results/nafp/recipe_v3_30ep/PROTOCOL.md",
+        "PROTOCOL_intervention2": DATA / "results/nafp/intervention2/PROTOCOL.md",
+        "RESULTS_recipe_v3":     DATA / "results/nafp/recipe_v3_30ep/RESULTS.md",
+    }
+    for slug, src in protocols.items():
+        if src.exists():
+            (staging / "data" / "results" / f"{slug}.md").write_text(src.read_text())
+            print(f"  [results] {slug}.md")
 
 
 # ── 5) inspection (tracks/sections/works/leakage) ────────────────────────
