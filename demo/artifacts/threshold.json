@@ -1,0 +1,15 @@
+{
+  "T_default": 0.7866731153259278,
+  "T_high_confidence": 0.8917904959449768,
+  "fpr_target_default": 0.05,
+  "fpr_target_high_conf": 0.01,
+  "tpr_at_default": 0.9909365558912386,
+  "tpr_at_high_conf": 0.8539778449144008,
+  "actual_fpr_default": 0.041916167664670656,
+  "actual_fpr_high_conf": 0.0,
+  "n_in_library": 993,
+  "n_out_of_library": 167,
+  "feasible": true,
+  "ckpt": "recipe_v3 seed 42 ckpt-30",
+  "seed": 20260515
+}

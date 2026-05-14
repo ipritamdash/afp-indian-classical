@@ -1,0 +1,15 @@
+category,test,qid,truth,verdict,score,matched,pass,latency_s,pre_score,live_score
+A_in_library,1s Hindustani — easy,hindustani_t0000_q0,hindustani_0_Raag_Shree,HIGH,0.967,True,True,4.977946996688843,,
+A_in_library,3s Hindustani,hindustani_t0000_q0,hindustani_0_Raag_Shree,HIGH,0.9386,True,True,10.347332954406738,,
+A_in_library,5s Hindustani,hindustani_t0000_q0,hindustani_0_Raag_Shree,HIGH,0.9182,True,True,10.663999080657959,,
+A_in_library,1s Carnatic — easy,carnatic_t0000_q0,carnatic_101_Maname_Kanamum,HIGH,0.9984,True,True,4.981899976730347,,
+A_in_library,5s Carnatic,carnatic_t0030_q1,carnatic_192_Sri_Guru_Na_Palitosmi,HIGH,0.9533,True,True,5.541553020477295,,
+B_ool,LOW-score OOL probe,,,NO_MATCH,,,True,12.481245040893555,0.5236971378326416,0.3052
+B_ool,MID-score OOL probe,,,NO_MATCH,,,True,9.159886121749878,0.6045151948928833,0.2392
+B_ool,HIGH-score OOL probe (near threshold),,,NO_MATCH,,,True,7.380955934524536,0.809788703918457,0.1758
+C_recipe_v3_miss,,carnatic_t0022_q2,carnatic_165_Deenarakshaka,MATCH,0.8602,False,,4.744487047195435,,
+C_recipe_v3_miss,,carnatic_t0026_q1,carnatic_179_Chenduril_Nindradum_Kanda,MATCH,0.8066,False,,5.227529048919678,,
+C_recipe_v3_miss,,carnatic_t0030_q1,carnatic_192_Sri_Guru_Na_Palitosmi,HIGH,0.941,False,,4.999086856842041,,
+D_edge,silent_5s,,,NO_MATCH,0.3551,,,5.447481155395508,,
+D_edge,too_short_0.5s,,,REJECTED,,,True,4.388031005859375,,
+D_edge,white_noise_5s,,,NO_MATCH,0.258,,True,5.5357770919799805,,

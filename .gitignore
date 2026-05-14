@@ -82,6 +82,7 @@ hf_dataset/data/
 hf_dataset/staging/
 logs/
 nafp_patched_*.tar.gz
+demo_clips_pack.tar.gz
 *.log
 
 # Kaggle / Colab kernel metadata (regenerable)

@@ -1,0 +1,15 @@
+# Pinned for reproducibility — these exact versions verified against local Mac M5 Metal env.
+# TF 2.19 + tf-keras 2.19 + TF_USE_LEGACY_KERAS=1 is mandatory (see app.py line 1).
+# kapre 0.3.7 is the reference NAFP front-end. Newer kapre 0.4.x requires numpy 2.
+tensorflow==2.19.0
+tf-keras==2.19.0
+kapre==0.3.7
+numpy>=2.0,<2.2
+librosa>=0.11,<1.0
+soundfile
+faiss-cpu
+pandas
+pyarrow
+pyyaml
+huggingface_hub
+gradio==6.14.0

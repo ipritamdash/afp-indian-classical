@@ -1,12 +1,16 @@
 # Audio Fingerprinting Benchmark for Indian Classical Music
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Demo](https://img.shields.io/badge/🎵-live%20demo-orange.svg)](https://huggingface.co/spaces/Tachyeon/afp-indian-classical-demo)
 [![Dataset](https://img.shields.io/badge/dataset-Hugging%20Face-yellow.svg)](https://huggingface.co/datasets/Tachyeon/audio-fingerprint-indian-bench)
 [![Python](https://img.shields.io/badge/Python-3.11-3776AB.svg)](pyproject.toml)
 
 Five audio-fingerprinting systems benchmarked on the **Saraga 1.5** Indian classical
 music corpus (357 refs, 6 528 evaluation cells), plus a **pre-registered training-recipe
 improvement to NAFP** with Bonferroni-significant gains on 1-second queries.
+
+**🎵 Live demo:** https://huggingface.co/spaces/Tachyeon/afp-indian-classical-demo
+**📁 Demo clip pack (67 clips, 8 MB):** [`demo_clips/`](demo_clips/) ([download zip](demo_clips_pack.zip))
 
 ---
 
