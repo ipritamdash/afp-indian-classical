@@ -1628,7 +1628,7 @@ Per seed (manifest.json):
 
 ### Colab notebook structure
 
-`scripts/nafp/colab_train_recipe_v3.ipynb`:
+`scripts/nafp/colab_train_recipe_v3.ipynb` (public mirror: <https://colab.research.google.com/drive/1bS3q8vOiylqW2lyICls_i-cGFKC8VZc6>):
 
 1. Mount Google Drive
 2. Install deps from Drive-mounted wheelhouse (Colab pip is unreliable for kapre 0.3.7)
@@ -2719,6 +2719,7 @@ Bonferroni:     α_corrected = α / n_tests = 0.05/8 = 0.00625
 - Live demo: https://huggingface.co/spaces/Tachyeon/afp-indian-classical-demo
 - Dataset: https://huggingface.co/datasets/Tachyeon/audio-fingerprint-indian-bench
 - Code: https://github.com/ipritamdash/afp-indian-classical
+- Recipe v3 training notebook (Colab): https://colab.research.google.com/drive/1bS3q8vOiylqW2lyICls_i-cGFKC8VZc6
 
 ## Training compute
 

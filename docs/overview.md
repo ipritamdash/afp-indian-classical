@@ -1353,6 +1353,8 @@ Why Colab L4 instead of Kaggle T4?
 
 Wall time per seed: 27 minutes. Three seeds: 80 minutes total.
 
+**Public training notebook:** <https://colab.research.google.com/drive/1bS3q8vOiylqW2lyICls_i-cGFKC8VZc6>. Open it in Colab, switch to an L4 runtime, and "Run all" produces the same `ckpt-30` (per seed) that's deployed in the demo.
+
 ### The pre-registration discipline
 
 The critical methodological step that makes your result defensible.
@@ -2067,6 +2069,7 @@ If you forget everything else, this is what to remember.
 - Demo: huggingface.co/spaces/Tachyeon/afp-indian-classical-demo
 - Dataset: huggingface.co/datasets/Tachyeon/audio-fingerprint-indian-bench
 - Code: github.com/ipritamdash/afp-indian-classical
+- Training notebook (Colab): colab.research.google.com/drive/1bS3q8vOiylqW2lyICls_i-cGFKC8VZc6
 - Saraga: zenodo.org/records/4301737
 - NAFP paper: arxiv.org/abs/2010.11910
 

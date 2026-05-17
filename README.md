@@ -14,6 +14,20 @@ improvement to NAFP** with Bonferroni-significant gains on 1-second queries.
 
 ---
 
+## Where everything lives
+
+| Artifact | URL |
+|---|---|
+| **Code (this repo)** | <https://github.com/ipritamdash/afp-indian-classical> |
+| **Benchmark dataset** (queries + result parquets + protocols) | <https://huggingface.co/datasets/Tachyeon/audio-fingerprint-indian-bench> |
+| **Live demo + trained model weights** (recipe v3 seed 42 ckpt-30) | <https://huggingface.co/spaces/Tachyeon/afp-indian-classical-demo> |
+| **Recipe v3 training notebook** (Colab L4, ~80 min for 3 seeds) | <https://colab.research.google.com/drive/1bS3q8vOiylqW2lyICls_i-cGFKC8VZc6> |
+| **Teaching docs** | [`docs/AFP_Overview_Guide.pdf`](docs/AFP_Overview_Guide.pdf) · [`docs/AFP_Teaching_Guide.pdf`](docs/AFP_Teaching_Guide.pdf) |
+| Saraga 1.5 source audio | <https://zenodo.org/records/4301737> (CC-BY-NC-SA 4.0; not redistributed here) |
+| NMFP teacher weights | <https://zenodo.org/records/15719945> (GPLv3 / AGPLv3; not redistributed here) |
+
+---
+
 ## TL;DR
 
 | | Value |
@@ -239,7 +253,9 @@ End-to-end, ~4 hours wall time.
 
 ### Train (Colab L4 GPU, ~80 min)
 
-1. Open `notebooks/colab_recipe_v3_train.ipynb` on Colab
+Public training notebook: **<https://colab.research.google.com/drive/1bS3q8vOiylqW2lyICls_i-cGFKC8VZc6>** (mirror of `notebooks/colab_recipe_v3_train.ipynb`).
+
+1. Open the Colab link above (or `notebooks/colab_recipe_v3_train.ipynb` locally)
 2. Upload via left sidebar: `kaggle.json` + `nafp_patched_recipe_v3.tar.gz` (built from `scripts/nafp/upstream/`)
 3. Runtime → Change runtime type → **L4 GPU**
 4. Runtime → **Run all**
