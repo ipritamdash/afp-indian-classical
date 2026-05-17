@@ -99,6 +99,25 @@ Trained from scratch on FMA-medium with 2 of NMFP's 5 published recipe fixes:
 
 ---
 
+## Teaching documents
+
+Two long-form reading guides built from the same automated pipeline. Self-contained, no prior AFP knowledge assumed.
+
+| Doc | What it is | Pages |
+|---|---|---|
+| [`docs/AFP_Overview_Guide.pdf`](docs/AFP_Overview_Guide.pdf) ([md source](docs/overview.md)) | Friendly high-level walkthrough — pipelines, analogies, "Questions they'll ask" boxes. No heavy math. Best starting point. | 51 |
+| [`docs/AFP_Teaching_Guide.pdf`](docs/AFP_Teaching_Guide.pdf) ([md source](docs/teach_me.md)) | Deep guide — every topic split into 🟢 Must-Know + 🔵 Depth. Includes formulas (STFT, mel, NT-Xent, McNemar) + cheat sheet. | 64 |
+
+Rebuild from source:
+
+```bash
+# both PDFs come from one script (set up: pip install markdown-pdf)
+python scripts/build_teach_me_pdf.py --doc overview
+python scripts/build_teach_me_pdf.py --doc teach
+```
+
+---
+
 ## Repo layout
 
 ```
@@ -110,6 +129,10 @@ Trained from scratch on FMA-medium with 2 of NMFP's 5 published recipe fixes:
 ├── .gitignore                             # excludes 67 GB audio + 2 GB checkpoints
 │
 ├── docs/
+│   ├── overview.md                        # high-level teaching doc (source)
+│   ├── teach_me.md                        # deep teaching doc (source)
+│   ├── AFP_Overview_Guide.pdf             # rendered overview (51 pp)
+│   ├── AFP_Teaching_Guide.pdf             # rendered deep guide (64 pp)
 │   ├── post_mortem_2026-05-12.md          # earlier post-mortem (Phase 1 audit)
 │   └── POST_MORTEM_RECIPE_V3.md           # ← this work: baseline vs recipe v3 analysis
 │
@@ -126,6 +149,7 @@ Trained from scratch on FMA-medium with 2 of NMFP's 5 published recipe fixes:
 │           └── nmfp_eval/                 # NMFP-ckpt-100 reference (Araz et al. 2025)
 │
 ├── scripts/
+│   ├── build_teach_me_pdf.py              # builds the two teaching PDFs from docs/*.md
 │   ├── score.py                           # canonical HR@k + MRR + top1_near + Wilson CI
 │   ├── manifest.py                        # build refs.csv + queries CSVs from Saraga
 │   ├── build_testset.py                   # cut query WAVs from refs (seeded)

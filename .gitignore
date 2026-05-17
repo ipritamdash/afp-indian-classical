@@ -25,6 +25,9 @@ wheels/
 venv/
 env/
 
+# Teaching PDF build manifests (regenerated on every rebuild)
+docs/*.meta.json
+
 # Editor / OS
 .DS_Store
 *.swp
