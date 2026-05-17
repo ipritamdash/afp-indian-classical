@@ -37,16 +37,16 @@ configs:
     path: data/queries_ablation/**
 - config_name: refs
   data_files:
-  - split: library
+  - split: train
     path: data/refs.parquet
 - config_name: inspection_tracks
-  data_files: [{split: library, path: data/inspection/tracks.parquet}]
+  data_files: [{split: train, path: data/inspection/tracks.parquet}]
 - config_name: inspection_sections
-  data_files: [{split: library, path: data/inspection/sections.parquet}]
+  data_files: [{split: train, path: data/inspection/sections.parquet}]
 - config_name: inspection_works
-  data_files: [{split: library, path: data/inspection/works.parquet}]
+  data_files: [{split: train, path: data/inspection/works.parquet}]
 - config_name: inspection_leakage_pairs
-  data_files: [{split: library, path: data/inspection/leakage_pairs.parquet}]
+  data_files: [{split: train, path: data/inspection/leakage_pairs.parquet}]
 ---
 
 # Audio Fingerprinting Benchmark on Indian Classical Music
