@@ -325,8 +325,8 @@ training-recipe modifications as the actual lever.
 Cite as:
 
 ```bibtex
-@misc{afp-indian-classical-2026,
-  author       = {Pritam Kumar},
+@misc{banwala2026afpindianclassical,
+  author       = {Aryan Banwala},
   title        = {Audio Fingerprinting Benchmark for Indian Classical Music},
   year         = {2026},
   howpublished = {\url{https://github.com/ipritamdash/afp-indian-classical}},
