@@ -35,88 +35,6 @@ configs:
   data_files:
   - split: test
     path: data/queries_ablation/**
-- config_name: refs
-  data_files:
-  - split: train
-    path: data/refs.parquet
-- config_name: inspection_tracks
-  data_files: [{split: train, path: data/inspection/tracks.parquet}]
-- config_name: inspection_sections
-  data_files: [{split: train, path: data/inspection/sections.parquet}]
-- config_name: inspection_works
-  data_files: [{split: train, path: data/inspection/works.parquet}]
-- config_name: inspection_leakage_pairs
-  data_files: [{split: train, path: data/inspection/leakage_pairs.parquet}]
-dataset_info:
-- config_name: refs
-  features:
-  - {name: ref_id, dtype: string}
-  - {name: corpus, dtype: string}
-  - {name: source_track_id, dtype: string}
-  - {name: duration_sec, dtype: float64}
-  - {name: samplerate, dtype: int64}
-  - {name: channels, dtype: int64}
-  - {name: raagas, dtype: string}
-  - {name: taalas, dtype: string}
-  - {name: artists, dtype: string}
-  - {name: works, dtype: string}
-  - {name: work_mbids, dtype: string}
-  - {name: role, dtype: string}
-  - {name: source_md5, dtype: string}
-  splits:
-  - {name: train, num_examples: 357}
-- config_name: inspection_tracks
-  features:
-  - {name: track_id, dtype: string}
-  - {name: title, dtype: string}
-  - {name: concert, dtype: string}
-  - {name: artists, dtype: string}
-  - {name: raagas, dtype: string}
-  - {name: taalas, dtype: string}
-  - {name: forms, dtype: string}
-  - {name: works, dtype: string}
-  - {name: work_mbids, dtype: string}
-  - {name: track_mbid, dtype: string}
-  - {name: audio_exists, dtype: bool}
-  - {name: samplerate, dtype: int64}
-  - {name: channels, dtype: int64}
-  - {name: duration_sec, dtype: float64}
-  - {name: format, dtype: string}
-  - {name: subtype, dtype: string}
-  - {name: size_bytes, dtype: int64}
-  splits:
-  - {name: train, num_examples: 357}
-- config_name: inspection_sections
-  features:
-  - {name: track_id, dtype: string}
-  - {name: start_sec, dtype: float64}
-  - {name: end_sec, dtype: float64}
-  - {name: label, dtype: string}
-  - {name: duration_sec, dtype: float64}
-  - {name: corpus, dtype: string}
-  - {name: is_alaap, dtype: bool}
-  - {name: is_composed, dtype: bool}
-  splits:
-  - {name: train, num_examples: 749}
-- config_name: inspection_works
-  features:
-  - {name: work_key, dtype: string}
-  - {name: key_type, dtype: string}
-  - {name: n_performances, dtype: int64}
-  - {name: tracks, dtype: string}
-  - {name: corpus, dtype: string}
-  splits:
-  - {name: train, num_examples: 616}
-- config_name: inspection_leakage_pairs
-  features:
-  - {name: test_source_tid, dtype: string}
-  - {name: library_tid, dtype: string}
-  - {name: kind, dtype: string}
-  - {name: key, dtype: string}
-  - {name: library_tid_is_test_source, dtype: bool}
-  - {name: corpus, dtype: string}
-  splits:
-  - {name: train, num_examples: 123}
 ---
 
 # Audio Fingerprinting Benchmark on Indian Classical Music
@@ -226,10 +144,12 @@ LICENSE        / LICENSE-CODE                 # CC-BY-NC-SA 4.0 (data) / MIT (co
 
 ## How to load
 
+**Audio queries** — registered as HF `datasets` configs:
+
 ```python
 from datasets import load_dataset
 
-# Audio queries with sample-accurate offsets
+# 1 000 main queries with sample-accurate ground-truth offsets
 queries = load_dataset(
     "Tachyeon/audio-fingerprint-indian-bench",
     "queries",
@@ -237,23 +157,41 @@ queries = load_dataset(
 )
 # queries[0] → {'audio': {...}, 'query_id': ..., 'ref_id': ..., 'offset_sec': ...}
 
-# Reference-track metadata (no audio paths — fetch source MP3s from Zenodo separately)
-refs = load_dataset(
+# 632 section-aligned ablation queries
+ablation = load_dataset(
     "Tachyeon/audio-fingerprint-indian-bench",
-    "refs",
-    split="library",
+    "queries_ablation",
+    split="test",
 )
+```
 
-# Per-system result tables — load any (system × split × length) parquet directly
+**Everything else (parquets / scores / protocols)** — fetched directly with `hf_hub_download`. The full file tree is browsable on the dataset's Files tab:
+
+```python
 from huggingface_hub import hf_hub_download
-import json
+import pandas as pd, json
 
+# 357-row reference-track metadata (no audio paths — fetch source MP3s from Zenodo separately)
+refs_path = hf_hub_download(
+    "Tachyeon/audio-fingerprint-indian-bench",
+    "data/refs.parquet", repo_type="dataset",
+)
+refs = pd.read_parquet(refs_path)        # 357 rows
+
+# Any (system × split × length) score, e.g. recipe v3 seed 42 on main_1s
 scores_path = hf_hub_download(
-    repo_id="Tachyeon/audio-fingerprint-indian-bench",
-    filename="data/results/recipe_v3_seed42_main_1s.scores.json",
+    "Tachyeon/audio-fingerprint-indian-bench",
+    "data/results/recipe_v3_seed42_main_1s.scores.json",
     repo_type="dataset",
 )
 print(json.load(open(scores_path))["hr@1"])   # → 0.993
+
+# The 130 composition-twin pairs (library audit)
+twins = pd.read_parquet(hf_hub_download(
+    "Tachyeon/audio-fingerprint-indian-bench",
+    "data/inspection/leakage_pairs.parquet",
+    repo_type="dataset",
+))
 ```
 
 ---

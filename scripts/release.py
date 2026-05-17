@@ -38,11 +38,11 @@ HF_REPO = "Tachyeon/audio-fingerprint-indian-bench"
 HF_README_LOCAL = REPO / "hf_dataset" / "README.md"
 
 EXPECTED_ROWS = {
-    ("refs", "train"): 357,
-    ("inspection_tracks", "train"): 357,
-    ("inspection_sections", "train"): 749,
-    ("inspection_works", "train"): 616,
-    ("inspection_leakage_pairs", "train"): 123,
+    # Only audio AudioFolder configs are registered with HF preview-server.
+    # Tabular parquets (refs.parquet, inspection_*.parquet) are not registered
+    # as configs by design — HF auto-detector confuses them with audiofolder
+    # when audio also exists in the dataset, so they're accessed via
+    # hf_hub_download (documented in the README's "How to load" section).
     ("queries", "test"): 1000,
     ("queries_ablation", "test"): 632,
 }
