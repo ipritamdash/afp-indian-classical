@@ -71,6 +71,26 @@ PRESETS = {
             "published with a live calibrated demo.</p>"
         ),
     },
+    "engineering": {
+        "src":      REPO_ROOT / "docs" / "engineering_log.md",
+        "out":      REPO_ROOT / "docs" / "AFP_Engineering_Log.pdf",
+        "title":    "Engineering Log — What we tried before Recipe v3 worked",
+        "subtitle": "Failures, audits, bugs, and the discipline that made the headline publishable",
+        "cover_blurb": (
+            "<p><b>This is the engineering slice of the project.</b> "
+            "Not the headline numbers — the work that made the headline numbers <i>defensible</i>. "
+            "Three major experiments that did not become the headline (Recipe v2 intermediate; "
+            "Intervention 2 negative; hubness post-processing negative), the Phase 1 audit that "
+            "caught four real latent bugs, three engineering gotchas that ate hours and are now "
+            "permanent memory notes, and the methodological choices (pre-registration, multiple "
+            "controls, cross-corpus tuning) that anchor every claim.</p>"
+            "<p><b>Each item is sized in proportion to how much intellectual work it represented.</b> "
+            "Major experiments get full anatomy (Hypothesis / Design / Result / Lesson). Small fixes "
+            "get a paragraph. Every claim cites a file path in the repo. No hallucinations.</p>"
+            "<p><b>Companion docs.</b> Deep math: <code>AFP_Teaching_Guide.pdf</code>. "
+            "High-level overview: <code>AFP_Overview_Guide.pdf</code>.</p>"
+        ),
+    },
 }
 
 AUTHOR_LINE = "Aryan Banwala · DTU CSE · B.Tech-II"

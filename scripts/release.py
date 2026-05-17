@@ -78,7 +78,7 @@ def cmd_pdf(args: argparse.Namespace) -> int:
     if not script.exists():
         fail(f"missing: {script}")
         return 2
-    for doc in ("teach", "overview"):
+    for doc in ("teach", "overview", "engineering"):
         r = subprocess.run([py, str(script), "--doc", doc])
         if r.returncode != 0:
             fail(f"PDF build failed for --doc {doc}")
@@ -212,8 +212,10 @@ def cmd_github(args: argparse.Namespace) -> int:
     files_to_add = [
         "docs/AFP_Overview_Guide.pdf",
         "docs/AFP_Teaching_Guide.pdf",
+        "docs/AFP_Engineering_Log.pdf",
         "docs/overview.md",
         "docs/teach_me.md",
+        "docs/engineering_log.md",
         "hf_dataset/README.md",
         "README.md",
         "scripts/release.py",

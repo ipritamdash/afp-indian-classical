@@ -117,17 +117,20 @@ Trained from scratch on FMA-medium with 2 of NMFP's 5 published recipe fixes:
 
 Two long-form reading guides built from the same automated pipeline. Self-contained, no prior AFP knowledge assumed.
 
-| Doc | What it is | Pages |
-|---|---|---|
-| [`docs/AFP_Overview_Guide.pdf`](docs/AFP_Overview_Guide.pdf) ([md source](docs/overview.md)) | Friendly high-level walkthrough — pipelines, analogies, "Questions they'll ask" boxes. No heavy math. Best starting point. | 51 |
-| [`docs/AFP_Teaching_Guide.pdf`](docs/AFP_Teaching_Guide.pdf) ([md source](docs/teach_me.md)) | Deep guide — every topic split into 🟢 Must-Know + 🔵 Depth. Includes formulas (STFT, mel, NT-Xent, McNemar) + cheat sheet. | 64 |
+| Doc | What it is |
+|---|---|
+| [`docs/AFP_Overview_Guide.pdf`](docs/AFP_Overview_Guide.pdf) ([md source](docs/overview.md)) | Friendly high-level walkthrough — pipelines, analogies, "Questions they'll ask" boxes. No heavy math. Best starting point. |
+| [`docs/AFP_Teaching_Guide.pdf`](docs/AFP_Teaching_Guide.pdf) ([md source](docs/teach_me.md)) | Deep guide — every topic split into 🟢 Must-Know + 🔵 Depth. Includes formulas (STFT, mel, NT-Xent, McNemar) + cheat sheet. |
+| [`docs/AFP_Engineering_Log.pdf`](docs/AFP_Engineering_Log.pdf) ([md source](docs/engineering_log.md)) | Engineering log — three major experiments that didn't become the headline (Recipe v2; Intervention 2 negative; hubness post-processing negative), the Phase 1 audit (four real bugs caught), and engineering gotchas with permanent fixes. The "what we tried" story. |
 
-Rebuild from source:
+Rebuild any of them from source (one script, three presets):
 
 ```bash
-# both PDFs come from one script (set up: pip install markdown-pdf)
 python scripts/build_teach_me_pdf.py --doc overview
 python scripts/build_teach_me_pdf.py --doc teach
+python scripts/build_teach_me_pdf.py --doc engineering
+# or rebuild all + push to HF + GitHub in one shot:
+python scripts/release.py all
 ```
 
 ---
