@@ -156,7 +156,8 @@ def cmd_hf_verify(args: argparse.Namespace) -> int:
             if last_seen[(cfg, sp)] != exp
         ]
         if not wrong:
-            ok(f"all 7 configs report expected rows (after {attempts} polls)")
+            ok(f"all {len(EXPECTED_ROWS)} registered configs report expected rows "
+               f"(after {attempts} poll{'s' if attempts != 1 else ''})")
             for (cfg, sp), exp in EXPECTED_ROWS.items():
                 print(f"    cfg={cfg:30s} split={sp:6s} rows={exp}")
             return 0
