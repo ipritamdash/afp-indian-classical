@@ -47,6 +47,76 @@ configs:
   data_files: [{split: train, path: data/inspection/works.parquet}]
 - config_name: inspection_leakage_pairs
   data_files: [{split: train, path: data/inspection/leakage_pairs.parquet}]
+dataset_info:
+- config_name: refs
+  features:
+  - {name: ref_id, dtype: string}
+  - {name: corpus, dtype: string}
+  - {name: source_track_id, dtype: string}
+  - {name: duration_sec, dtype: float64}
+  - {name: samplerate, dtype: int64}
+  - {name: channels, dtype: int64}
+  - {name: raagas, dtype: string}
+  - {name: taalas, dtype: string}
+  - {name: artists, dtype: string}
+  - {name: works, dtype: string}
+  - {name: work_mbids, dtype: string}
+  - {name: role, dtype: string}
+  - {name: source_md5, dtype: string}
+  splits:
+  - {name: train, num_examples: 357}
+- config_name: inspection_tracks
+  features:
+  - {name: track_id, dtype: string}
+  - {name: title, dtype: string}
+  - {name: concert, dtype: string}
+  - {name: artists, dtype: string}
+  - {name: raagas, dtype: string}
+  - {name: taalas, dtype: string}
+  - {name: forms, dtype: string}
+  - {name: works, dtype: string}
+  - {name: work_mbids, dtype: string}
+  - {name: track_mbid, dtype: string}
+  - {name: audio_exists, dtype: bool}
+  - {name: samplerate, dtype: int64}
+  - {name: channels, dtype: int64}
+  - {name: duration_sec, dtype: float64}
+  - {name: format, dtype: string}
+  - {name: subtype, dtype: string}
+  - {name: size_bytes, dtype: int64}
+  splits:
+  - {name: train, num_examples: 357}
+- config_name: inspection_sections
+  features:
+  - {name: track_id, dtype: string}
+  - {name: start_sec, dtype: float64}
+  - {name: end_sec, dtype: float64}
+  - {name: label, dtype: string}
+  - {name: duration_sec, dtype: float64}
+  - {name: corpus, dtype: string}
+  - {name: is_alaap, dtype: bool}
+  - {name: is_composed, dtype: bool}
+  splits:
+  - {name: train, num_examples: 749}
+- config_name: inspection_works
+  features:
+  - {name: work_key, dtype: string}
+  - {name: key_type, dtype: string}
+  - {name: n_performances, dtype: int64}
+  - {name: tracks, dtype: string}
+  - {name: corpus, dtype: string}
+  splits:
+  - {name: train, num_examples: 616}
+- config_name: inspection_leakage_pairs
+  features:
+  - {name: test_source_tid, dtype: string}
+  - {name: library_tid, dtype: string}
+  - {name: kind, dtype: string}
+  - {name: key, dtype: string}
+  - {name: library_tid_is_test_source, dtype: bool}
+  - {name: corpus, dtype: string}
+  splits:
+  - {name: train, num_examples: 123}
 ---
 
 # Audio Fingerprinting Benchmark on Indian Classical Music
